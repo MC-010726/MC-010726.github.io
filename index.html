@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Codex - AI & DIGITAL INNOVATION</title>
+<meta name="description" content="Automazioni AI su misura per le PMI.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='572' height='515' viewBox='0 0 572 515' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='572' width='515' height='572' transform='rotate(90 572 0)' fill='%23060D1E'/%3E%3Cpath d='M99.9377 100.335C104.711 99.9696 111.129 100.161 116.04 100.189C115.997 107.059 116.007 113.929 116.068 120.8L106.492 120.735L106.493 422.327C129.41 422.239 127.15 423.134 127.15 399.558L127.133 175.774C127.127 150.703 127.318 125.388 126.997 100.338C137.045 101.56 150.771 106.814 159.972 110.852C200.844 128.791 234.956 159.359 264.964 191.814C272.304 199.754 279.016 208.022 285.876 216.357C296.238 203.457 307.238 191.084 318.838 179.283C348.795 148.793 382.63 121.264 423.193 106.34C430.158 103.778 437.541 101.533 444.87 100.341L444.824 400.575C444.807 422.532 442.777 422.577 465.118 422.237C465.482 407.562 465.232 391.904 465.246 377.163L465.226 120.817C462.446 120.665 458.764 120.751 455.918 120.745C455.774 114.05 455.896 106.915 455.938 100.202L464.761 100.138C470.775 100.107 476.778 99.7583 481.315 104.46C486.707 110.05 485.785 118.608 485.773 125.798L485.728 143.206L485.631 331.559L485.694 401.026C485.702 413.154 486.165 429.837 485.393 441.626C475.84 441.808 465.732 441.646 456.14 441.646L398.489 441.655L398.597 438.116C418.965 435.475 421.282 424.827 420.581 406.602C420.385 401.506 420.546 395.616 420.544 390.472L420.575 213.601C420.566 187.693 420.373 161.293 420.705 135.416C373.464 155.473 334.85 193.815 302.053 232.361C296.522 238.862 291.408 245.661 286.01 252.236C281.893 247.746 278.153 242.188 274.186 237.493C241.094 198.317 199.572 154.697 151.041 135.38L151.065 405.19C151.068 414.247 150.11 425.403 157.466 432.095C162.179 436.381 167.415 437.093 173.438 438.025L173.474 441.666L85.9891 441.672L85.9093 127.896C85.873 115.63 84.178 102.69 99.9377 100.335Z' fill='%23FDFEFF'/%3E%3Cpath d='M127.123 49.0145C130.231 49.6654 133.328 50.3681 136.413 51.1216C199.22 66.4701 253.532 127.348 285.978 180.85L292.032 171.238C320.121 127.091 361.745 81.7768 410.012 60.0326C421.801 54.7209 432.268 51.791 444.807 49L444.889 66.3749C444.895 68.4712 445.009 73.4679 444.753 75.3436C444.327 75.4293 443.901 75.5174 443.478 75.6085C391.37 86.7527 346.642 126.398 314.129 167.084C303.859 179.934 294.92 193.727 285.984 207.513C283.803 204.805 278.84 196.76 276.702 193.532C271.823 186.055 266.639 178.78 261.164 171.727C229.36 130.125 185.505 90.1839 133.469 76.708C131.344 76.1578 129.166 75.6727 127.026 75.1712C127.112 66.4524 127.144 57.7335 127.123 49.0145Z' fill='%23FDFEFF'/%3E%3Cpath d='M384.136 346.626C384.758 347.132 385.891 348.569 386.402 349.225C398.751 365.107 406.057 388.675 403.745 408.687C400.523 410.973 395.65 413.015 391.97 414.622C359.151 428.965 312.739 422.254 286.164 397.462C272.219 409.539 255.227 417.559 237.041 420.644C217.801 423.989 198.007 421.802 179.961 414.338C176.728 413.006 171.008 410.376 168.235 408.42C168.153 386.272 170.641 372.352 183.061 353.355C184.555 351.049 186.217 348.944 187.886 346.768C189.731 352.94 192.041 357.552 194.918 363.27C188.118 375.681 184.569 384.673 183.835 398.97C189.789 402.282 199.075 404.529 205.878 405.562C224.177 408.34 242.45 405.46 259.123 397.468C263.676 395.287 267.467 393.62 271.614 390.558C283 382.151 283.759 370.83 285.655 358.291C288.591 366.453 288.77 374.693 293.191 382.455C299.825 393.617 318.208 399.916 329.972 403.571C345.666 408.454 373.851 407.531 388.191 399.104C388.406 385.883 383.784 374.573 377.247 363.417C380.618 356.848 382.077 353.744 384.136 346.626Z' fill='%23FDFEFF'/%3E%3Cpath d='M199.454 208.274C200.466 208.555 201.431 209.14 202.362 209.647C226.854 223.1 245.009 245.722 252.844 272.55C246.969 271.317 242.074 271.283 236.172 272.087C231.638 257.628 218.483 239.411 205.772 231.104C204.917 235.29 203.446 239.303 202.85 243.612C199.444 268.222 206.704 294.928 222.498 314.17C225.077 317.311 227.699 320.617 231.362 322.497C241.432 325.28 240.975 301.463 240.909 295.649C247.021 295.501 250.443 295.819 256.323 297.549C256.493 303.241 256.291 310.284 255.104 315.814C252.93 325.945 247.821 336.385 236.648 338.43C233.568 338.995 228.913 338.581 226.483 339.126C222.734 339.97 216.435 343.463 213.248 345.59C210.656 340.052 209.959 335.567 209.297 329.634C210.571 328.992 212.006 328.356 213.311 327.748C202.864 314.877 197.401 305.595 192.129 289.938C182.702 261.948 184.377 233.819 199.454 208.274Z' fill='%23FDFEFF'/%3E%3Cpath d='M372.684 208.214C373.788 209.355 376.029 213.93 376.815 215.541C382.903 228.026 386.118 242.232 385.851 256.183C385.396 278.947 378.122 301.049 364.969 319.632C361.709 324.247 358.739 327.914 354.772 331.97C346.586 340.331 333.41 341.831 325.159 332.609C316.649 323.097 315.47 309.842 315.95 297.541C322.14 295.88 325.221 295.647 331.417 295.457L331.392 296.863C331.292 303.784 331.133 315.718 336.222 321.438C339.515 325.145 344.152 320.257 346.657 317.704C350.882 313.131 354.562 308.078 357.62 302.651C367.374 285.331 371.619 265.658 369.498 245.76C368.964 240.741 367.683 235.828 366.335 230.979C352.478 239.608 341.938 257.203 336.094 272.153C330.457 271.247 324.704 271.389 319.122 272.571C319.184 272.346 319.247 272.122 319.315 271.9C327.942 243.354 346.634 222.121 372.684 208.214Z' fill='%23FDFEFF'/%3E%3Cpath d='M377.758 306.659C378.965 308.02 380.637 316.344 381.126 318.665C388.835 355.365 355.045 399.987 315.7 392.554C304.385 390.415 296.877 384.411 293.947 373.139C290.011 357.986 295.406 350.528 307.758 342.445C301.937 332.044 297.093 325.376 289.514 316.327C292.89 313.078 295.912 310.261 299.668 307.457L300.54 306.972C301.616 307.094 304.115 310.11 304.933 311.076C317.625 326.023 327.842 343.72 331.565 363.15C331.59 364.556 333.677 371.699 332.076 372.346C328.353 373.846 321.311 373.738 317.469 373.096C317.12 366.674 315.959 361.846 313.568 355.902C312.741 356.714 311.927 357.532 311.123 358.364C297.769 372.247 313.02 378.703 326.15 377.575C350.97 375.448 369.009 348.284 366.809 324.578C370.872 317.96 373.803 313.865 377.758 306.659Z' fill='%23FDFEFF'/%3E%3Cpath d='M325.545 275.889C337.877 274.177 350.283 279.973 360.384 286.307C358.816 290.877 356.374 297.159 353.589 300.951C351.442 298.761 347.807 296.753 345.064 295.435C310.249 278.729 273.293 322.53 260.567 349.815C256.964 358.362 255.778 364.079 254.528 373.193C249.725 373.749 243.863 373.69 239.241 372.139C241.347 350.821 250.626 331.758 264.031 315.242C279.247 296.489 300.578 278.323 325.545 275.889Z' fill='%23FDFEFF'/%3E%3Cpath d='M194.155 306.91C195.303 308.432 197.293 312.158 198.427 313.97C200.642 317.512 202.86 320.747 205.238 324.189C202.975 346.524 219.844 373.216 242.797 377.135C256.356 379.453 275.978 374.991 262.065 357.842C263.595 352.997 265.523 348.933 267.898 344.476C268.524 344.86 269.146 345.249 269.759 345.647C275.197 349.14 278.519 353.417 279.905 359.776C281.347 370.376 276.191 384.926 265.855 389.533C238.705 401.634 210.121 383.966 197.528 359.43C188.196 341.247 188.193 326.01 194.155 306.91Z' fill='%23FDFEFF'/%3E%3Cpath d='M263.077 416.89C264.164 417.165 265.038 419.526 265.584 420.548C270.912 430.506 277.477 439.435 285.996 446.908C296.812 437.867 302.323 428.719 309.073 416.83C314.547 419.389 317.603 420.528 323.356 422.42C320.826 428.384 317.009 434.726 313.301 440.014C305.151 451.781 297.831 458.788 286.152 466.843C270.293 457.899 256.579 438.651 249.208 422.335C254.505 420.633 258.131 419.367 263.077 416.89Z' fill='%23FDFEFF'/%3E%3Cpath d='M240.065 275.888C242.636 275.525 247.192 275.837 249.783 276.22C262.449 278.095 272.347 282.915 282.524 290.316C278.582 293.852 274.758 297.221 271.188 301.134C265.301 296.917 260.203 294.985 253.434 292.946C252.498 292.722 251.555 292.523 250.607 292.355C238.094 290.225 228.541 293.92 218.508 301.049C215.033 295.315 214.081 292.478 211.849 286.226C221.877 280.552 228.079 276.956 240.065 275.888Z' fill='%23FDFEFF'/%3E%3Cpath d='M362.508 330.841C363.783 333.204 360.5 343.056 359.501 345.737L354.753 342.61L351.227 340.514C355.807 337.646 358.729 334.629 362.508 330.841Z' fill='%23FDFEFF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#060D1E">
+<style>
+  /* ═══════════════════════════════════════════════════════════════════════
+     Memory Codex — landing "Blue Precision" (design brief)
+     Dark mode di default · IBM Plex Sans/Mono · nessun serif
+     Logo ufficiale (marchio a libro/codice) · concept "assumi un reparto"
+     ═══════════════════════════════════════════════════════════════════════ */
+  :root{
+    color-scheme:dark; /* impedisce al "dark theme forzato" di Android/Chrome di scurire ulteriormente lo sfondo già scuro del footer su mobile */
+    --bg:#0A1628;
+    --bg-deep:#0D1A32;      /* navy del footer — schiarito rispetto all'originale #060D1E, che sui mobile risultava troppo vicino al nero */
+    --surface:#141F33;
+    --surface-2:#101a2c;
+    --border:rgba(255,255,255,.08);
+    --border-soft:rgba(255,255,255,.06);
+    --divider:rgba(95,212,232,.4);   /* separatore logo/payoff header — modifica qui per cambiarne visibilità */
+    --blue:#2E6FF2;
+    --blue-hover:#255ACC;
+    --blue-light:#5B8FF9;
+    --blue-tint:rgba(46,111,242,.15);
+    --cyan:#5FD4E8;
+    --cyan-tint:rgba(95,212,232,.12);
+    --pink:#F472B6;            /* accento introdotto col footer, richiamato con parsimonia anche altrove */
+    --pink-tint:rgba(244,114,182,.14);
+    --text:#F5F7FA;
+    --text-2:#9FB3D1;
+    --text-3:#7A8DA8;
+    --ok:#4ED8A0;
+    --sans:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    --mono:'Space Grotesk','IBM Plex Mono','SF Mono',Consolas,monospace;
+    --maxw:1140px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:92px} /* evita che l'header sticky copra l'inizio della sezione quando si arriva da un link del menu */
+  body{
+    background:var(--bg);color:var(--text);
+    font-family:var(--sans);font-size:16px;font-weight:400;line-height:1.6;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;position:relative;
+  }
+  /* glow di sfondo (fisso, molto leggero) */
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background:
+      radial-gradient(680px 480px at 78% -6%, rgba(46,111,242,.18), transparent 60%),
+      radial-gradient(560px 520px at 4% 8%, rgba(95,212,232,.10), transparent 60%),
+      radial-gradient(700px 700px at 50% 118%, rgba(46,111,242,.08), transparent 60%);
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .mark{width:100%;height:100%;color:currentColor}
+
+  /* label / mono */
+  .eyebrow{
+    font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--blue-light);
+  }
+
+  /* ---- Buttons ---- */
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;
+    padding:12px 22px;border-radius:8px;border:1px solid transparent;cursor:pointer;
+    transition:background .16s ease,border-color .16s ease,transform .16s ease,box-shadow .16s ease;
+  }
+  .btn-primary{background:var(--blue);color:#fff;box-shadow:0 8px 24px -10px rgba(46,111,242,.7)}
+  .btn-primary:hover{background:var(--blue-hover);transform:translateY(-1px)}
+  .btn-secondary{background:rgba(255,255,255,.02);color:var(--text);border-color:rgba(255,255,255,.18)}
+  .btn-secondary:hover{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.05)}
+  .btn svg{width:16px;height:16px}
+
+  /* ---- Header ---- */
+  .site-header{
+    position:sticky;top:0;z-index:30;background:rgba(10,22,40,.72);
+    backdrop-filter:saturate(160%) blur(12px);-webkit-backdrop-filter:saturate(160%) blur(12px);
+    border-bottom:1px solid var(--border);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+  .logo{display:flex;align-items:center;gap:11px;font-weight:500;font-size:17px;letter-spacing:.01em;flex:1 1 auto;min-width:0}
+  /* spaziatore invisibile: forza il payoff a andare a capo sotto il logo senza allargare il suo box
+     (altrimenti su mobile il box si allarga a piena riga e la sfumatura del testo si stira, sbilanciandosi verso il rosa) */
+  .logo-break{display:none;flex-basis:100%;width:0;height:0}
+  .logo .logo-mark{width:30px;height:30px;color:var(--text);flex:0 0 auto}
+  .logo b{font-weight:500}
+  /* payoff accanto al marchio (solo desktop, per non affollare l'header mobile) */
+  /* niente padding/border sul testo stesso: sposterebbe il box del gradiente e farebbe leggere
+     una sfumatura diversa da quella (identica) usata nel footer. Il separatore verticale è un
+     ::before posizionato a parte, così il testo ha lo stesso box (e quindi la stessa resa colore)
+     di .footer-payoff. */
+  .payoff{display:inline-block;position:relative;margin-left:14px;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.15em;
+    text-transform:uppercase;
+    background:linear-gradient(120deg,var(--pink),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .payoff::before{content:"";position:absolute;left:-14px;top:50%;transform:translateY(-50%);width:1.5px;height:14px;background:var(--divider)}
+  @media(min-width:900px){.payoff{display:inline-block}}
+  /* sotto i 900px la scritta andava a capo su due righe: la teniamo su una sola riga senza toccare il resto */
+  @media(max-width:899px){.payoff{font-size:9px;letter-spacing:.09em;white-space:nowrap;flex-shrink:0}}
+  /* sotto gli 860px (niente più nav-links inline) il payoff scende sotto il logo, così l'header
+     libera spazio in larghezza per il pulsante del menu invece di affollarsi su un'unica riga */
+  @media(max-width:859px){
+    .nav{height:auto;min-height:66px;padding:11px 0}
+    .logo{flex-wrap:wrap;row-gap:3px}
+    .logo-break{display:block}
+    .payoff{margin-left:41px;font-size:9.5px}
+    .payoff::before{content:none}
+    .nav-right{padding-right:6px}
+  }
+  .nav-links{display:none;gap:30px}
+  .nav-links a{font-size:14.5px;color:var(--text-2);transition:color .16s ease}
+  .nav-links a:hover{color:var(--text)}
+  .nav-right{display:flex;align-items:center;gap:18px;flex:0 0 auto}
+  .header-cta{display:none}
+  @media(min-width:860px){.nav-links{display:flex}.header-cta{display:inline-flex}}
+
+  /* ---- Nav toggle (hamburger) + drawer mobile ---- */
+  .nav-toggle{
+    display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;
+    width:40px;height:40px;border-radius:9px;border:1px solid var(--border-soft);
+    background:rgba(255,255,255,.03);color:var(--text);cursor:pointer;
+    transition:border-color .16s ease,background .16s ease;
+  }
+  .nav-toggle:hover{border-color:rgba(95,212,232,.3);background:rgba(255,255,255,.06)}
+  .nav-toggle svg{width:20px;height:20px}
+  .nav-toggle .i-close{display:none}
+  .nav-toggle[aria-expanded="true"] .i-open{display:none}
+  .nav-toggle[aria-expanded="true"] .i-close{display:block}
+  @media(min-width:860px){.nav-toggle{display:none}}
+  .mobile-nav{
+    display:none;flex-direction:column;
+    border-top:1px solid var(--border);background:rgba(10,22,40,.96);
+    backdrop-filter:saturate(160%) blur(12px);-webkit-backdrop-filter:saturate(160%) blur(12px);
+    padding:6px 22px 18px;
+  }
+  .mobile-nav.open{display:flex}
+  .mobile-nav a{font-size:15px;color:var(--text-2);padding:13px 2px;border-bottom:1px solid var(--border-soft)}
+  .mobile-nav a:hover{color:var(--text)}
+  .mobile-nav .btn{margin-top:14px;justify-content:center}
+  @media(min-width:860px){.mobile-nav{display:none !important}}
+
+  /* ---- Sections ---- */
+  section{padding:clamp(58px,9vw,112px) 0}
+  .section-head{max-width:660px;margin-bottom:clamp(34px,5vw,54px)}
+  .section-head h2{font-size:clamp(25px,3.6vw,33px);font-weight:500;line-height:1.18;margin:14px 0 12px;letter-spacing:-.015em}
+  .section-head p{color:var(--text-2);font-size:16.5px}
+
+  /* ---- Hero ---- */
+  /* sfondo "rete neurale": particelle su canvas con drift lento e linee tra nodi vicini (stile particles.js).
+     Due canvas distinti: uno per l'hero (densità piena, come le versioni precedenti), uno per il resto
+     della pagina sotto (densità leggermente più bassa ma distribuita in modo uniforme, senza diradarsi
+     scendendo). Il footer non la ha più. */
+  main{position:relative}
+  main>section,.below-hero{position:relative}
+  .below-hero>section{position:relative;z-index:1}
+  .mesh-bg{
+    position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden;
+  }
+  .mesh-bg canvas{display:block;width:100%;height:100%}
+  .mesh-bg--hero{opacity:.85;-webkit-mask-image:linear-gradient(180deg,transparent,#000 14%,#000 88%,transparent);mask-image:linear-gradient(180deg,transparent,#000 14%,#000 88%,transparent)}
+  .mesh-bg--rest{opacity:.72;-webkit-mask-image:linear-gradient(180deg,transparent,#000 6%,#000 88%,transparent);mask-image:linear-gradient(180deg,transparent,#000 6%,#000 88%,transparent)}
+  .hero{padding-top:clamp(32px,5vw,58px);padding-bottom:clamp(50px,8vw,92px);position:relative;z-index:1}
+  .hero-grid{display:grid;gap:clamp(38px,6vw,64px);align-items:center;grid-template-columns:1fr}
+  @media(min-width:940px){.hero-grid{grid-template-columns:1.08fr .92fr}}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;
+    letter-spacing:.05em;color:var(--blue-light);background:var(--cyan-tint);
+    border:1px solid rgba(95,212,232,.24);border-radius:20px;padding:6px 14px;
+  }
+  .badge .dot{width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 3px rgba(95,212,232,.2)}
+  .hero h1{
+    font-size:clamp(33px,5.4vw,54px);font-weight:600;line-height:1.06;letter-spacing:-.025em;
+    margin:4px 0 20px;max-width:15ch;
+  }
+  .hero h1 .accent{
+    background:linear-gradient(120deg,var(--pink) -10%,var(--cyan) 32%,var(--blue));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero-sub{font-size:clamp(16px,2.1vw,19px);color:var(--text-2);max-width:52ch;margin-bottom:30px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+  .hero-meta{margin-top:26px;display:flex;flex-wrap:wrap;gap:8px 20px;font-family:var(--mono);font-size:12px;color:var(--text-3);letter-spacing:.02em}
+  .hero-meta span{display:inline-flex;align-items:center;gap:7px}
+  .hero-meta span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--blue-light);opacity:.8}
+
+  /* ---- Hero visual: team panel ---- */
+  .team-panel{
+    background:linear-gradient(180deg,rgba(20,31,51,.92),rgba(16,26,44,.92));
+    border:1px solid var(--border);border-radius:18px;padding:20px;
+    box-shadow:0 30px 80px -40px rgba(0,0,0,.9),0 0 0 1px rgba(95,212,232,.04) inset;
+    position:relative;overflow:hidden;
+  }
+  .team-panel::before{
+    /* prima il box del bagliore era spostato per metà fuori dal pannello (top/right negativi):
+       si vedeva solo una fetta del cerchio e il suo bordo sembrava un taglio netto invece di una
+       sfumatura. Ora il box copre l'intero pannello (inset:0) e il bagliore è posizionato con le
+       coordinate "at", cosà la dissolvenza verso il trasparente resta sempre dentro l'area visibile. */
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(55% 50% at 82% 8%, rgba(46,111,242,.22), transparent 72%);
+  }
+  .team-head{display:flex;align-items:center;justify-content:space-between;padding:2px 4px 16px;position:relative}
+  .team-head .t-title{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500}
+  .team-head .t-title .logo-mark{width:22px;height:22px;color:var(--text)}
+  .team-head .t-status{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--ok);display:inline-flex;align-items:center;gap:6px}
+  .team-head .t-status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(78,216,160,.18)}
+  /* riga del pannello team: si "ribalta" come le schede agenti, mostrando ruolo/stato sul fronte e la frase dell'agente sul retro */
+  .t-row{
+    position:relative;display:block;width:100%;min-height:66px;border-radius:12px;
+    margin-top:10px;perspective:900px;transition:transform .18s ease;
+  }
+  .t-row:hover{transform:translateX(2px)}
+  /* .t-row è ora un <button>: annulla lo stile nativo, il resto lo eredita dalla regola sopra */
+  button.t-row{appearance:none;-webkit-appearance:none;font:inherit;color:inherit;text-align:left;cursor:pointer;border:0;background:transparent;padding:0}
+  .t-row:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+  .t-row-flip{
+    display:block;position:relative;width:100%;height:100%;min-height:66px;
+    transform-style:preserve-3d;transition:transform .6s cubic-bezier(.22,.68,.2,1.05);
+  }
+  .t-row:hover .t-row-flip,.t-row:focus-visible .t-row-flip{transform:rotateX(180deg)}
+  .t-row-face{
+    position:absolute;inset:0;display:flex;align-items:center;gap:13px;padding:13px 12px;
+    border-radius:12px;border:1px solid var(--border-soft);background:rgba(10,22,40,.55);
+    backface-visibility:hidden;-webkit-backface-visibility:hidden;transition:border-color .18s ease;
+  }
+  .t-row:hover .t-row-face,.t-row:focus-visible .t-row-face{border-color:rgba(95,212,232,.3)}
+  .t-row-back{transform:rotateX(180deg);flex-direction:column;align-items:flex-start;justify-content:center;gap:6px}
+  .t-row-tag{font-size:13px;color:var(--text-2);font-style:italic;line-height:1.4}
+  .t-row-hint{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;color:var(--text-3);display:inline-flex;align-items:center;gap:6px}
+  .t-row-hint svg{width:13px;height:13px}
+  .t-row:hover .t-row-hint,.t-row:focus-visible .t-row-hint{color:var(--p)}
+
+  /* ---- Mini-testa robottino (avatar agente) ---- */
+  .t-ic{
+    --p:var(--cyan);
+    width:40px;height:36px;border-radius:20px 20px 15px 15px;position:relative;flex:0 0 auto;
+    background:linear-gradient(160deg, color-mix(in srgb,var(--p) 42%,#241d52) 0%, color-mix(in srgb,var(--p) 20%,#1b1543) 44%, #100c30 100%);
+    box-shadow:inset 0 -5px 9px rgba(0,0,0,.5), inset 0 3px 7px color-mix(in srgb,var(--p) 30%,transparent), 0 6px 14px rgba(6,8,26,.55);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .t-ic::before{ /* riflesso lucido */
+    content:"";position:absolute;left:5px;top:3px;right:12px;height:9px;border-radius:14px;
+    background:linear-gradient(180deg,color-mix(in srgb,var(--p) 45%,#fff),transparent);opacity:.26;
+  }
+  .t-ic-antenna{
+    position:absolute;left:50%;top:-6px;translate:-50% 0;width:2px;height:6px;border-radius:2px;
+    background:var(--p);box-shadow:0 0 6px var(--p);
+  }
+  .t-ic-antenna::after{
+    content:"";position:absolute;left:50%;top:-4px;translate:-50% 0;width:4px;height:4px;border-radius:50%;
+    background:var(--p);box-shadow:0 0 8px var(--p);
+  }
+  .t-ic-visor{
+    width:30px;height:16px;border-radius:9px;overflow:hidden;
+    background:radial-gradient(120% 130% at 50% 0%, #14113a, #06051c);
+    box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--p) 32%,transparent);
+    display:flex;align-items:center;justify-content:center;gap:5px;
+  }
+  .t-ic-eye{
+    width:5px;height:6.5px;border-radius:3px;
+    background:linear-gradient(180deg,#fff,var(--p));box-shadow:0 0 6px var(--p);
+    animation:rb-blink 6s infinite;
+  }
+  .t-ic-eye.r{animation-delay:.06s}
+  /* battito di ciglia naturale: durata e ritardo diversi per agente, non solo sfasati ma con intervalli propri (versione mini) */
+  .t-ic.p-concierge .t-ic-eye{animation-duration:5.4s;animation-delay:0s}
+  .t-ic.p-scribe    .t-ic-eye{animation-duration:6.2s;animation-delay:.8s}
+  .t-ic.p-archivist .t-ic-eye{animation-duration:7.1s;animation-delay:1.6s}
+  .t-ic.p-herald    .t-ic-eye{animation-duration:4.8s;animation-delay:2.4s}
+  .t-ic.p-muse      .t-ic-eye{animation-duration:6.7s;animation-delay:3.2s}
+  .t-ic.p-sage      .t-ic-eye{animation-duration:8.3s;animation-delay:4s}
+  /* forma degli occhi coerente con personalità/ruolo — versione mini (pannello team) */
+  .t-ic.p-scribe    .t-ic-eye{width:3.5px;height:7.5px;border-radius:2px}                 /* Email — precisi, a "riga di testo" */
+  .t-ic.p-archivist .t-ic-eye{width:6px;height:6px;border-radius:1.5px}                   /* Amministrazione — squadrati, solidi */
+  .t-ic.p-herald    .t-ic-eye{width:6.5px;height:6.5px;border-radius:50%}                 /* Vendite — come Muse, tondi */
+  .t-ic.p-sage      .t-ic-eye{width:6.5px;height:7.5px;border-radius:0;clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%)} /* Documenti — esagonali, mistici */
+  .t-meta{min-width:0;flex:1}
+  .t-role{font-size:14px;font-weight:500;line-height:1.2}
+  .t-area{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-3);margin-top:2px}
+  .t-live{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;color:var(--ok);display:inline-flex;align-items:center;gap:6px;flex:0 0 auto}
+  .t-live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ok)}
+
+  /* ---- Concept strip ---- */
+  .concept{padding:clamp(40px,6vw,72px) 0}
+  .concept-card{
+    border:1px solid var(--border);border-radius:18px;padding:clamp(28px,5vw,48px);
+    background:linear-gradient(120deg,rgba(20,31,51,.7),rgba(16,26,44,.55));
+    display:grid;gap:22px;align-items:center;grid-template-columns:1fr;
+  }
+  @media(min-width:820px){.concept-card{grid-template-columns:1.3fr 1fr;gap:44px}}
+  .concept h2{font-size:clamp(23px,3.4vw,32px);font-weight:600;line-height:1.15;letter-spacing:-.02em}
+  .concept h2 .accent{color:var(--blue-light)}
+  .concept p{color:var(--text-2);font-size:16px;margin-top:14px;max-width:46ch}
+  .concept-side{display:grid;gap:12px}
+  .concept-side .cs-item{display:flex;gap:12px;align-items:flex-start;font-size:14.5px;color:var(--text-2)}
+  .concept-side .cs-item svg{width:20px;height:20px;color:var(--blue-light);flex:0 0 auto;margin-top:1px}
+
+  /* ---- Il valore: testo + lista voci, senza pannello/card ---- */
+  .value-split{display:grid;gap:28px;align-items:center;grid-template-columns:1fr}
+  @media(min-width:820px){.value-split{grid-template-columns:1.3fr 1fr;gap:52px}}
+  .value-split .concept-side{gap:22px;margin-top:36px}
+  .value-split .cs-item{font-size:15.5px;color:var(--text);align-items:center}
+  .value-split .cs-item .icon-wrap{width:38px;height:38px;border-radius:10px;margin-top:0}
+  .value-split .cs-item .icon-wrap svg{width:18px;height:18px}
+
+  /* ---- Grid agenti (flip-card + robottino) ---- */
+  /* align-items:stretch fa sì che ogni riga della griglia si adatti alla card più alta
+     e tutte le altre card di quella riga vengano allungate alla stessa altezza: schede sempre in armonia
+     anche quando il contenuto o la larghezza della finestra cambiano quante card stanno per riga. */
+  .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));align-items:stretch}
+
+  /* la card diventa la "scena" 3D: nessuno sfondo/bordo proprio, quelli stanno sulle facce.
+     overflow visibile così il robottino può "uscire" oltre il bordo prima del giro */
+  .feature-card{
+    --p:var(--cyan);            /* colore-personalità (sovrascritto per agente) */
+    --aura-x:50%;--aura-y:20%;  /* posizione dell'ambiente della personalità */
+    position:relative;background:transparent;border:0;border-radius:14px;padding:0;
+    perspective:1400px;transition:transform .18s ease,box-shadow .18s ease;
+    min-height:420px;cursor:pointer;
+  }
+  /* ---- personalità: colore + ambiente/posizione coerenti ---- */
+  .feature-card.p-scribe   {--p:#5FD4E8;--aura-x:50%;--aura-y:18%}   /* Email — ordinato, sereno */
+  .feature-card.p-archivist{--p:#E8A552;--aura-x:22%;--aura-y:84%}   /* Amministrazione — archivio caldo */
+  .feature-card.p-herald   {--p:#4ED8A0;--aura-x:50%;--aura-y:88%}   /* Vendite — crescita dal basso */
+  .feature-card.p-muse     {--p:#FFDE59;--aura-x:74%;--aura-y:22%}   /* Marketing — giallo */
+  .feature-card.p-concierge{--p:#C7D0DB;--aura-x:50%;--aura-y:48%}   /* Assistant — grigio chiaro, calmo e centrato */
+  .feature-card.p-sage     {--p:#A98CF0;--aura-x:50%;--aura-y:16%}   /* Documenti — saggio, mistico */
+  /* stessi colori-personalità applicati al mini-avatar del pannello "Il tuo team" */
+  .t-ic.p-scribe   {--p:#5FD4E8}
+  .t-ic.p-archivist{--p:#E8A552}
+  .t-ic.p-herald   {--p:#4ED8A0}
+  .t-ic.p-muse     {--p:#FFDE59}
+  .t-ic.p-concierge{--p:#C7D0DB}
+  .t-ic.p-sage     {--p:#A98CF0}
+  /* stessi colori-personalità disponibili anche sulla riga (per il retro con la frase dell'agente) */
+  .t-row.p-scribe   {--p:#5FD4E8}
+  .t-row.p-archivist{--p:#E8A552}
+  .t-row.p-herald   {--p:#4ED8A0}
+  .t-row.p-muse     {--p:#FFDE59}
+  .t-row.p-concierge{--p:#C7D0DB}
+  .t-row.p-sage     {--p:#A98CF0}
+  .feature-card.p-herald .robot{animation-duration:2.2s}
+  .feature-card.p-sage .robot{animation-duration:3.4s}
+  .feature-card.p-concierge .robot{animation-duration:3s}
+  .feature-card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -34px rgba(46,111,242,.55)}
+  /* arrivo da "Il tuo team"/footer: un'illuminazione dei bordi, nel colore dell'agente, poi svanisce — niente più giro/blocco della scheda */
+  @keyframes card-jump-glow{
+    0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--p) 0%,transparent)}
+    10%{box-shadow:0 0 36px 2px color-mix(in srgb,var(--p) 55%,transparent),0 0 0 1.5px color-mix(in srgb,var(--p) 75%,transparent)}
+    75%{box-shadow:0 0 36px 2px color-mix(in srgb,var(--p) 55%,transparent),0 0 0 1.5px color-mix(in srgb,var(--p) 75%,transparent)}
+    100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--p) 0%,transparent)}
+  }
+  .feature-card.jump-highlight{animation:card-jump-glow 4.5s ease-out;border-radius:14px}
+  @media(prefers-reduced-motion:reduce){.feature-card.jump-highlight{animation:none}}
+
+  .flip-inner{
+    position:relative;width:100%;height:100%;min-height:420px;
+    transform-style:preserve-3d;
+    transition:transform .7s cubic-bezier(.22,.68,.2,1.1);
+  }
+  @media(hover:hover){
+    .feature-card:hover .flip-inner{transform:rotateY(180deg)}
+  }
+  .feature-card.flipped .flip-inner{transform:rotateY(180deg)}
+
+  .flip-face{
+    border-radius:14px;border:1px solid var(--border-soft);
+    -webkit-backface-visibility:hidden;backface-visibility:hidden;
+    transition:border-color .18s ease;
+  }
+  .feature-card:hover .flip-face{border-color:rgba(95,212,232,.32)}
+
+  /* FACCIA INIZIALE — il robottino con la sua personalità (colore + ambiente) */
+  .robot-face{
+    position:absolute;inset:0;overflow:visible;color:var(--p);
+    background:linear-gradient(180deg,var(--surface),var(--surface-2));
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+    padding:26px 22px;text-align:center;
+  }
+  /* ambiente della personalità: tinta + aura + pulviscolo, ritagliato ai bordi della card */
+  .robot-env{position:absolute;inset:0;overflow:hidden;border-radius:14px;pointer-events:none;z-index:0}
+  .robot-env::before{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(66% 46% at var(--aura-x) var(--aura-y), color-mix(in srgb, var(--p) 26%, transparent), transparent 70%),
+      radial-gradient(58% 52% at 16% 92%, color-mix(in srgb, var(--p) 12%, transparent), transparent 72%);
+  }
+  .robot-aura{
+    position:absolute;left:50%;top:46%;translate:-50% -50%;
+    width:186px;height:186px;border-radius:50%;
+    background:radial-gradient(circle, var(--p) 0%, transparent 62%);
+    opacity:.18;filter:blur(8px);animation:rb-breathe 6s ease-in-out infinite;
+  }
+  .robot-mote{position:absolute;bottom:-8px;width:4px;height:4px;border-radius:50%;background:var(--p);opacity:.5;animation:rb-rise linear infinite}
+  .robot-mote.m1{left:24%;animation-duration:16s;animation-delay:-2s}
+  .robot-mote.m2{left:52%;animation-duration:20s;animation-delay:-9s}
+  .robot-mote.m3{left:77%;animation-duration:18s;animation-delay:-5s}
+  .feature-card.p-herald .robot-mote{animation-duration:11s}
+  /* pulviscolo differenziato per agente — Sage mantiene i pallini originali, gli altri hanno una forma propria */
+  .feature-card.p-scribe    .robot-mote{width:9px;height:2px;border-radius:1px}                                  /* Scribe — trattini, come righe di testo */
+  .feature-card.p-archivist .robot-mote{width:5px;height:5px;border-radius:1px}                                  /* Atlas — tessere quadrate, da archivio */
+  .feature-card.p-herald    .robot-mote{width:0;height:0;border-radius:0;background:transparent;border-left:3px solid transparent;border-right:3px solid transparent;border-bottom:6px solid var(--p)}  /* Pulse — frecce verso l'alto */
+  .feature-card.p-muse      .robot-mote{width:7px;height:7px;border-radius:0;clip-path:polygon(50% 0%,61% 35%,100% 50%,61% 65%,50% 100%,39% 65%,0% 50%,39% 35%)}  /* Muse — scintille */
+  .feature-card.p-concierge .robot-mote{width:7px;height:7px;border-radius:50%;background:transparent;border:1.5px solid var(--p)}  /* Echo — anelli morbidi */
+  @keyframes rb-breathe{0%,100%{opacity:.12}50%{opacity:.28}}
+  @keyframes rb-rise{0%{transform:translateY(0);opacity:0}16%{opacity:.5}84%{opacity:.35}100%{transform:translateY(-300px);opacity:0}}
+  @keyframes rb-spin{from{rotate:0deg}to{rotate:360deg}}
+
+  .robot-face .card-badge{margin:0 0 4px;position:relative;z-index:1}
+  .robot-stage{
+    position:relative;z-index:1;
+    width:170px;height:196px;filter:drop-shadow(0 16px 20px rgba(0,0,0,.55));
+    transition:transform .55s cubic-bezier(.34,1.4,.5,1);
+  }
+  /* il robottino "esce" dalla scheda e la fa girare */
+  @media(hover:hover){
+    .feature-card:hover .robot-stage{transform:translateY(-16px) scale(1.09)}
+  }
+  .feature-card.flipped .robot-stage{transform:translateY(-16px) scale(1.09)}
+  .robot-name{position:relative;z-index:1;font-size:18px;font-weight:600;color:var(--p);letter-spacing:-.01em;margin-top:8px}
+  .robot-tag{position:relative;z-index:1;font-size:13.5px;color:var(--text-2);max-width:26ch;line-height:1.45;font-style:italic}
+  .robot-face .flip-hint{position:absolute;left:0;right:0;bottom:16px;justify-content:center;margin:0;padding:0;z-index:1}
+
+  /* FACCIA DETTAGLI — ruolo completo + funzionalità (in flusso: definisce l'altezza) */
+  .details-face{
+    position:relative;min-height:420px;height:100%;
+    transform:rotateY(180deg);background:var(--surface);
+    padding:26px 24px 24px;display:flex;flex-direction:column;overflow:hidden;
+  }
+  .details-face::after{
+    content:"";position:absolute;top:0;left:0;right:0;height:2px;
+    background:linear-gradient(90deg,var(--p),color-mix(in srgb,var(--p) 45%,var(--blue)));opacity:0;transition:opacity .18s ease;
+  }
+  .feature-card:hover .details-face::after,
+  .feature-card.flipped .details-face::after{opacity:1}
+  .details-face .agent-mini{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--p);margin-bottom:3px}
+  .details-face .agent-role{font-size:19px;font-weight:600;margin:2px 0 8px;letter-spacing:-.01em}
+
+  /* ═══ ROBOT "realistico" in stile Sage — composto in CSS, tinto da --p ═══ */
+  .rbt{position:relative;width:170px;height:196px;perspective:520px}
+  /* alone: anello 3D che ruota lentamente (firma più marcata su Sage) */
+  .rbt-halo{
+    position:absolute;left:50%;top:16px;translate:-50% 0;z-index:0;
+    width:120px;height:120px;border-radius:50%;
+    border:2.5px solid color-mix(in srgb, var(--p) 55%, transparent);
+    box-shadow:0 0 16px color-mix(in srgb, var(--p) 28%, transparent), inset 0 0 10px color-mix(in srgb, var(--p) 18%, transparent);
+    transform:rotateX(76deg);
+  }
+  .feature-card.p-sage .rbt-halo{border-color:color-mix(in srgb, var(--p) 72%, transparent);box-shadow:0 0 22px color-mix(in srgb, var(--p) 42%, transparent), inset 0 0 12px color-mix(in srgb, var(--p) 26%, transparent)}
+  .rbt-float{position:absolute;inset:0;animation:rb-float 5.5s ease-in-out infinite}
+
+  /* TESTA — capsula con volume (ombre interne) */
+  .rbt-head{
+    position:absolute;left:50%;top:24px;translate:-50% 0;z-index:1;
+    width:118px;height:106px;border-radius:60px 60px 44px 44px;
+    background:linear-gradient(160deg, color-mix(in srgb,var(--p) 42%,#241d52) 0%, color-mix(in srgb,var(--p) 20%,#1b1543) 44%, #100c30 100%);
+    box-shadow:inset 0 -12px 22px rgba(0,0,0,.5), inset 0 6px 16px color-mix(in srgb,var(--p) 30%,transparent), 0 18px 34px rgba(6,8,26,.6);
+  }
+  .rbt-head::before{ /* riflesso lucido in alto */
+    content:"";position:absolute;left:14px;top:10px;right:34px;height:26px;border-radius:40px;
+    background:linear-gradient(180deg, color-mix(in srgb,var(--p) 40%,#fff) , transparent);opacity:.22;
+  }
+  .rbt-antenna{
+    position:absolute;left:50%;top:-15px;translate:-50% 0;width:3px;height:17px;border-radius:2px;
+    background:var(--p);box-shadow:0 0 8px var(--p);
+  }
+  .rbt-antenna::after{
+    content:"";position:absolute;left:50%;top:-6px;translate:-50% 0;width:7px;height:7px;border-radius:50%;
+    background:var(--p);box-shadow:0 0 12px var(--p);animation:rb-blip 1.6s ease-in-out infinite;
+  }
+  /* VISIERA — schermo scuro con anello luminoso e sweep */
+  .rbt-visor{
+    position:absolute;left:50%;top:30px;translate:-50% 0;
+    width:92px;height:50px;border-radius:26px;overflow:hidden;
+    background:radial-gradient(120% 130% at 50% 0%, #14113a, #06051c);
+    box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--p) 30%,transparent), inset 0 8px 20px rgba(0,0,0,.7);
+    display:flex;align-items:center;justify-content:center;gap:18px;
+  }
+  .rbt-visor::after{
+    content:"";position:absolute;left:-30%;top:-60%;width:160%;height:120%;
+    background:linear-gradient(100deg,transparent 40%, color-mix(in srgb,var(--p) 22%,transparent) 50%, transparent 60%);
+    animation:rb-sweep 6s ease-in-out infinite;
+  }
+  .rbt-eye{
+    width:16px;height:20px;border-radius:9px;
+    background:linear-gradient(180deg,#fff,var(--p));box-shadow:0 0 14px var(--p);
+    animation:rb-blink 6s infinite;transform-origin:center;
+  }
+  .rbt-eye.r{animation-delay:.06s}
+  /* battito di ciglia naturale: durata e ritardo diversi per agente, non solo sfasati ma con intervalli propri (versione grande) */
+  .feature-card.p-concierge .rbt-eye{animation-duration:5.4s;animation-delay:0s}
+  .feature-card.p-scribe    .rbt-eye{animation-duration:6.2s;animation-delay:.8s}
+  .feature-card.p-archivist .rbt-eye{animation-duration:7.1s;animation-delay:1.6s}
+  .feature-card.p-herald    .rbt-eye{animation-duration:4.8s;animation-delay:2.4s}
+  .feature-card.p-muse      .rbt-eye{animation-duration:6.7s;animation-delay:3.2s}
+  .feature-card.p-sage      .rbt-eye{animation-duration:8.3s;animation-delay:4s}
+  /* forma degli occhi coerente con personalità/ruolo — versione grande (retro card) */
+  .feature-card.p-scribe    .rbt-eye{width:11px;height:22px;border-radius:5px}            /* Email — precisi, a "riga di testo" */
+  .feature-card.p-archivist .rbt-eye{width:18px;height:18px;border-radius:5px}            /* Amministrazione — squadrati, solidi */
+  .feature-card.p-herald    .rbt-eye{width:19px;height:19px;border-radius:50%}            /* Vendite — come Muse, tondi */
+  .feature-card.p-sage      .rbt-eye{width:18px;height:20px;border-radius:0;clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%)} /* Documenti — esagonali, mistici */
+
+  /* CORPO — mantello che sfuma e fluttua, con "mani" di luce */
+  .rbt-body{
+    position:absolute;left:50%;top:112px;translate:-50% 0;z-index:1;
+    width:122px;height:80px;border-radius:46px 46px 30px 30px;
+    background:linear-gradient(180deg, color-mix(in srgb,var(--p) 32%,#241c55) 0%, #171140 56%, rgba(20,16,54,0) 100%);
+    box-shadow:0 16px 30px rgba(6,8,26,.5);
+  }
+  .rbt-body::before,.rbt-body::after{
+    content:"";position:absolute;top:20px;width:14px;height:14px;border-radius:50%;
+    background:var(--p);box-shadow:0 0 14px var(--p);
+  }
+  .rbt-body::before{left:-5px;animation:rb-hand-l 5.5s ease-in-out infinite}
+  .rbt-body::after{right:-5px;animation:rb-hand-r 5.5s ease-in-out infinite}
+  /* PETTO — pannello con "modulo" personalizzato per personalità */
+  .rbt-chest{
+    position:absolute;left:50%;top:15px;translate:-50% 0;
+    width:52px;height:34px;border-radius:8px;padding:7px;
+    background:rgba(6,5,26,.72);
+    box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--p) 38%,transparent), 0 0 16px color-mix(in srgb,var(--p) 28%,transparent);
+    display:flex;align-items:flex-end;justify-content:center;gap:4px;
+  }
+  .rbt-chest i{width:5px;border-radius:2px;background:linear-gradient(180deg,#fff,var(--p));transform-origin:bottom;height:60%}
+  /* default (Sage): pagine del codex che pulsano */
+  .rbt-chest i:nth-child(1){height:45%}
+  .rbt-chest i:nth-child(2){height:70%}
+  .rbt-chest i:nth-child(3){height:55%}
+  .rbt-chest i:nth-child(4){height:85%}
+  .rbt-chest i:nth-child(5){height:60%}
+  .rbt-chest i{animation:rb-pages 2.8s ease-in-out infinite}
+  .rbt-chest i:nth-child(2){animation-delay:.3s}
+  .rbt-chest i:nth-child(3){animation-delay:.6s}
+  .rbt-chest i:nth-child(4){animation-delay:.9s}
+  .rbt-chest i:nth-child(5){animation-delay:1.2s}
+
+  /* Pulse (vendite): grafico a barre crescenti */
+  .feature-card.p-herald .rbt-chest{align-items:flex-end}
+  .feature-card.p-herald .rbt-chest i{animation:none}
+  .feature-card.p-herald .rbt-chest i:nth-child(1){height:28%}
+  .feature-card.p-herald .rbt-chest i:nth-child(2){height:46%}
+  .feature-card.p-herald .rbt-chest i:nth-child(3){height:62%}
+  .feature-card.p-herald .rbt-chest i:nth-child(4){height:80%}
+  .feature-card.p-herald .rbt-chest i:nth-child(5){height:96%}
+  /* Muse (marketing): onda sonora animata */
+  .feature-card.p-muse .rbt-chest i{height:70%;animation:rb-wave 1.3s ease-in-out infinite}
+  /* Scribe (email) & Atlas (documenti/admin): righe di testo */
+  .feature-card.p-scribe .rbt-chest,
+  .feature-card.p-archivist .rbt-chest{flex-direction:column;align-items:flex-start;justify-content:center;gap:3.5px}
+  .feature-card.p-scribe .rbt-chest i,
+  .feature-card.p-archivist .rbt-chest i{width:100%;height:3px;animation:rb-blink 5s infinite}
+  .feature-card.p-scribe .rbt-chest i:nth-child(1){width:90%}
+  .feature-card.p-scribe .rbt-chest i:nth-child(2){width:64%}
+  .feature-card.p-scribe .rbt-chest i:nth-child(3){width:82%}
+  .feature-card.p-scribe .rbt-chest i:nth-child(4){width:52%}
+  .feature-card.p-scribe .rbt-chest i:nth-child(5){display:none}
+  .feature-card.p-archivist .rbt-chest i:nth-child(5){display:none}
+  /* Echo (assistant): fila di indicatori/stato */
+  .feature-card.p-concierge .rbt-chest{align-items:center;gap:6px}
+  .feature-card.p-concierge .rbt-chest i{width:7px;height:7px;border-radius:50%;animation:rb-pages 2.4s ease-in-out infinite}
+  .feature-card.p-concierge .rbt-chest i:nth-child(4),
+  .feature-card.p-concierge .rbt-chest i:nth-child(5){display:none}
+
+  /* idle sempre attivo; ritmi variati per personalità */
+  .feature-card.p-herald .rbt-float{animation-duration:4.4s}
+  .feature-card.p-sage .rbt-float{animation-duration:6.6s}
+  .feature-card.p-concierge .rbt-float{animation-duration:6s}
+  @keyframes rb-float{0%,100%{translate:0 0}50%{translate:0 -12px}}
+  @keyframes rb-blink{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.12)}}
+  @keyframes rb-pages{0%,100%{transform:scaleY(.6);opacity:.65}50%{transform:scaleY(1);opacity:1}}
+  @keyframes rb-wave{0%,100%{transform:scaleY(.45)}50%{transform:scaleY(1)}}
+  @keyframes rb-sweep{0%,100%{transform:translateX(-40%)}50%{transform:translateX(40%)}}
+  @keyframes rb-hand-l{0%,100%{translate:0 0}50%{translate:-4px -7px}}
+  @keyframes rb-hand-r{0%,100%{translate:0 -5px}50%{translate:4px 2px}}
+
+  .flip-hint{
+    display:inline-flex;align-items:center;gap:7px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--text-3);
+  }
+  .flip-hint svg{width:14px;height:14px}
+  .feature-card:hover .flip-hint{color:var(--p)}
+  /* coerenza cromatica della card con la personalità dell'agente */
+  .feature-card .icon-wrap{background:color-mix(in srgb,var(--p) 15%,transparent);border-color:color-mix(in srgb,var(--p) 22%,transparent)}
+  .feature-card .icon-wrap svg{color:var(--p)}
+  .feature-card .card-badge{color:var(--p);background:color-mix(in srgb,var(--p) 14%,transparent)}
+
+  @media(prefers-reduced-motion:reduce){
+    .flip-inner,.robot-stage{transition:none}
+    .feature-card:hover .flip-inner{transform:none}
+    .feature-card:hover .robot-stage,.feature-card.flipped .robot-stage{transform:none}
+    .feature-card.flipped .flip-inner{transform:rotateY(180deg)}
+    .robot-aura,.rbt-float,.rbt-halo,.rbt-eye,.rbt-chest i,.rbt-visor::after,.rbt-antenna::after,.rbt-body::before,.rbt-body::after{animation:none !important}
+    .robot-mote{display:none}
+  }
+
+  .fc-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+  .icon-wrap{
+    width:44px;height:44px;border-radius:11px;background:var(--blue-tint);
+    display:flex;align-items:center;justify-content:center;border:1px solid rgba(95,212,232,.14);
+  }
+  .icon-wrap svg{width:21px;height:21px;color:var(--blue-light)}
+  .fc-num{font-family:var(--mono);font-size:13px;color:var(--text-3);letter-spacing:.08em}
+  .card-badge{
+    font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--blue-light);background:var(--cyan-tint);border-radius:20px;padding:4px 11px;align-self:flex-start;margin-bottom:13px;
+  }
+  .feature-card h3{font-size:19px;font-weight:600;margin:3px 0 8px;letter-spacing:-.01em}
+  /* nome agente: "Memory Codex" evidente come parte del nome, ma differenziato dal ruolo */
+  .agent-name .mc{display:block;font-size:13.5px;font-weight:500;color:var(--blue-light);letter-spacing:.005em;margin-bottom:2px}
+  .fc-tagline{color:var(--p);font-size:13.5px;font-style:italic;margin-bottom:10px;opacity:.92}
+  .feature-card .desc{color:var(--text-2);font-size:14.5px;line-height:1.55}
+  .bullets{list-style:none;margin-top:18px;padding-top:16px;border-top:1px solid var(--border-soft);display:grid;gap:9px}
+  .bullets li{position:relative;padding-left:20px;font-size:13px;color:var(--text-3);line-height:1.5}
+  .bullets li::before{
+    content:"";position:absolute;left:0;top:.35em;width:12px;height:12px;border-radius:50%;
+    background:var(--cyan-tint);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235FD4E8' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+    background-size:8px 8px;background-repeat:no-repeat;background-position:center;
+  }
+
+  /* ---- Come funziona ---- */
+  .steps{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));position:relative}
+  .step{position:relative;background:var(--surface-2);border:1px solid var(--border-soft);border-radius:14px;padding:26px 24px}
+  .step-num{
+    font-family:var(--mono);font-size:14px;font-weight:500;color:var(--blue-light);
+    width:40px;height:40px;border-radius:10px;border:1px solid rgba(95,212,232,.3);background:var(--cyan-tint);
+    display:flex;align-items:center;justify-content:center;margin-bottom:18px;
+  }
+  .step h3{font-size:17.5px;font-weight:500;margin-bottom:8px}
+  .step p{color:var(--text-2);font-size:14.5px}
+
+  /* ---- Valori / perché ---- */
+  .values{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+  .value{display:flex;align-items:center;gap:16px}
+  .value .icon-wrap{flex:none;margin-bottom:0}
+  .value h3{font-size:17.5px;font-weight:500;margin-bottom:8px}
+  .value p{color:var(--text-2);font-size:14.5px}
+  .value p:empty,.value h3:last-child{margin-bottom:0}
+
+  /* ---- FAQ ---- */
+  .faq{display:grid;gap:12px;max-width:820px}
+  .faq details{
+    border:1px solid var(--border-soft);border-radius:12px;background:var(--surface-2);
+    padding:0 20px;transition:border-color .18s ease;
+  }
+  .faq details[open]{border-color:rgba(95,212,232,.28)}
+  .faq summary{
+    list-style:none;cursor:pointer;padding:18px 0;font-size:16px;font-weight:500;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary .chev{width:18px;height:18px;color:var(--text-3);flex:0 0 auto;transition:transform .2s ease}
+  .faq details[open] summary .chev{transform:rotate(180deg);color:var(--cyan)}
+  .faq .faq-body{color:var(--text-2);font-size:14.5px;line-height:1.6;padding:0 0 20px;max-width:64ch}
+
+  /* ---- CTA finale ---- */
+  .cta-final{text-align:center}
+  .cta-card{
+    position:relative;overflow:hidden;
+    background:linear-gradient(140deg,rgba(46,111,242,.16),rgba(20,31,51,.9) 55%);
+    border:1px solid var(--border);border-radius:20px;
+    padding:clamp(42px,7vw,76px) 28px;max-width:780px;margin:0 auto;
+  }
+  .cta-card::before{
+    content:"";position:absolute;top:-50%;left:50%;transform:translateX(-50%);
+    width:520px;height:420px;background:radial-gradient(circle,rgba(95,212,232,.16),transparent 70%);pointer-events:none;
+  }
+  .cta-card>*{position:relative}
+  .cta-card h2{font-size:clamp(25px,4vw,35px);font-weight:600;line-height:1.14;letter-spacing:-.015em;margin-bottom:14px}
+  .cta-card p{color:var(--text-2);max-width:48ch;margin:0 auto 28px}
+
+  /* ---- Footer ---- */
+  /* footer in blu scuro (--bg-deep, lo stesso navy del logo, finora inutilizzato): resta nella stessa
+     famiglia cromatica di header/hero invece del grigio chiaro di prima. La fascia è "incorniciata" dalla
+     stessa linea sfumata rosa/blu in cima e in fondo (::before/::after); dentro, l'accento rosa (--pink)
+     è usato solo su payoff/mail/link per dare identità propria, con una seconda sfumatura ciano→rosa
+     (diversa da quella del payoff) sulle etichette delle colonne. Il testo di corpo e la riga finale
+     (copyright) restano sui grigio-blu neutri di sempre, sullo stesso sfondo blu di tutto il footer. */
+  .site-footer{
+    background:var(--bg-deep);border-top:1px solid var(--border);padding:52px 0 0;color:var(--text-3);position:relative;overflow:hidden
+  }
+  .site-footer::before,.site-footer::after{
+    content:"";position:absolute;left:0;right:0;height:2px;
+    background:linear-gradient(90deg,transparent,var(--pink),var(--blue),transparent);opacity:.5;
+  }
+  .site-footer::before{top:0}
+  .site-footer::after{bottom:0}
+  .site-footer>.wrap{position:relative;z-index:1}
+  .footer-top{display:flex;flex-wrap:wrap;gap:36px;justify-content:space-between}
+  .footer-brand{max-width:320px}
+  .footer-brand .logo{margin-bottom:14px;color:var(--text)}
+  .footer-brand .logo .logo-mark{width:28px;height:28px}
+  .footer-payoff{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;margin:0 0 14px;
+    background:linear-gradient(120deg,var(--pink),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .footer-brand p{font-size:14px;color:var(--text-3)}
+  .footer-brand .mail{color:var(--pink);font-family:var(--mono);font-size:13px;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+  .footer-brand .mail:hover{color:var(--text)}
+  .footer-cols{display:flex;gap:56px;flex-wrap:wrap}
+  /* sfumatura secondaria rosa-celeste (diversa da quella rosa-blu di AI & Digital Innovation), tenuta
+     morbida con l'opacità: usata sia per le etichette delle colonne sia per l'hover dei link, così i due
+     stati restano coerenti tra loro senza introdurre un terzo accento. */
+  .footer-col h4{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;font-weight:500;
+    background:linear-gradient(100deg,var(--blue-light),var(--blue-light));-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.8}
+  .footer-col a{display:block;font-size:14px;color:var(--text-2);margin-bottom:9px;transition:opacity .16s ease}
+  .footer-col a:hover{background:linear-gradient(100deg,var(--cyan),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.9}
+  /* fascia finale del footer: si "stacca" dal resto con un blu meno scuro (--bg, lo stesso del corpo
+     pagina appena sopra il footer) invece del --bg-deep usato sopra; la linea sfumata e lo sfondo
+     chiaro sono estesi a tutta larghezza (100vw), non solo alla larghezza del .wrap, per allinearsi
+     alle linee superiore/inferiore del footer che coprono l'intera fascia. */
+  .footer-bottom{margin-top:44px;padding:22px 0 40px;position:relative;z-index:0;
+    display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-family:var(--mono);font-size:12px;color:var(--text-3)}
+  .footer-bottom::before,.footer-bottom::after{content:"";position:absolute;left:50%;width:100vw;margin-left:-50vw}
+  .footer-bottom::before{top:0;height:2px;
+    background:linear-gradient(90deg,transparent,var(--pink),var(--blue),transparent);opacity:.5}
+  .footer-bottom::after{top:0;bottom:0;background:var(--bg);z-index:-1}
+
+  /* ---- Modale "Prenota una call" ---- */
+  .modal-overlay{
+    position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;
+    padding:24px;background:rgba(6,10,22,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+    opacity:0;transition:opacity .2s ease;
+  }
+  .modal-overlay[hidden]{display:none}
+  .modal-overlay.open{opacity:1}
+  .modal{
+    position:relative;width:100%;max-width:600px;max-height:88vh;overflow-y:auto;
+    background:linear-gradient(180deg,var(--surface),var(--surface-2));
+    border:1px solid var(--border);border-radius:18px;
+    padding:clamp(26px,4vw,40px);box-shadow:0 40px 90px -30px rgba(0,0,0,.85);
+    transform:translateY(10px) scale(.98);transition:transform .22s ease;
+  }
+  .modal-overlay.open .modal{transform:translateY(0) scale(1)}
+  .modal-close{
+    position:absolute;top:16px;right:16px;width:34px;height:34px;border-radius:9px;
+    background:rgba(255,255,255,.04);border:1px solid var(--border-soft);color:var(--text-2);
+    display:flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .16s ease,color .16s ease;
+  }
+  .modal-close:hover{border-color:rgba(95,212,232,.35);color:var(--text)}
+  .modal-close svg{width:16px;height:16px}
+  .modal-title{font-size:clamp(21px,3vw,26px);font-weight:600;letter-spacing:-.01em;margin:12px 0 8px}
+  .modal-sub{color:var(--text-2);font-size:14.5px;margin-bottom:26px;max-width:52ch}
+  .booking-form{display:grid;gap:16px}
+  .field{display:grid;gap:7px}
+  .field-row{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:480px){.field-row{grid-template-columns:1fr 1fr}}
+  .field label{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--text-3)}
+  .field input,.field select,.field textarea{
+    font-family:var(--sans);font-size:14.5px;color:var(--text);background:rgba(10,22,40,.55);
+    border:1px solid var(--border-soft);border-radius:9px;padding:11px 13px;width:100%;
+    transition:border-color .16s ease,background .16s ease;
+  }
+  .field textarea{resize:vertical;min-height:88px;line-height:1.5}
+  .field input:focus,.field select:focus,.field textarea:focus{
+    outline:none;border-color:rgba(95,212,232,.5);background:rgba(10,22,40,.8);
+  }
+  .field select{appearance:none;-webkit-appearance:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237A8DA8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 12px center;background-size:16px 16px;padding-right:36px;
+  }
+  .field select option{background:var(--surface);color:var(--text)}
+  .agent-checks{display:grid;gap:9px;grid-template-columns:1fr;margin-top:2px}
+  @media(min-width:480px){.agent-checks{grid-template-columns:1fr 1fr}}
+  .chk{
+    display:flex;align-items:center;gap:9px;font-size:13.5px;font-weight:400;letter-spacing:normal;
+    text-transform:none;font-family:var(--sans);color:var(--text-2);cursor:pointer;
+    border:1px solid var(--border-soft);border-radius:9px;padding:9px 11px;background:rgba(10,22,40,.35);
+    transition:border-color .16s ease,color .16s ease;
+  }
+  .chk:has(input:checked){border-color:rgba(95,212,232,.4);color:var(--text)}
+  .chk input{accent-color:var(--cyan);width:15px;height:15px;flex:0 0 auto}
+  .modal-submit{width:100%;justify-content:center;margin-top:6px;font-size:15px;padding:13px 22px}
+  .modal-note{font-size:12.5px;color:var(--text-3);margin-top:2px}
+
+  /* reveal on scroll (progressive enhancement) */
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
+</head>
+<body>
+
+<!-- ═════════ SIMBOLO UFFICIALE (Memory Codex) — definito una volta, riusato con <use> ═════════ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="mc-mark" viewBox="0 0 572 515">
+    <path fill="currentColor" d="M99.9377 100.335C104.711 99.9696 111.129 100.161 116.04 100.189C115.997 107.059 116.007 113.929 116.068 120.8L106.492 120.735L106.493 422.327C129.41 422.239 127.15 423.134 127.15 399.558L127.133 175.774C127.127 150.703 127.318 125.388 126.997 100.338C137.045 101.56 150.771 106.814 159.972 110.852C200.844 128.791 234.956 159.359 264.964 191.814C272.304 199.754 279.016 208.022 285.876 216.357C296.238 203.457 307.238 191.084 318.838 179.283C348.795 148.793 382.63 121.264 423.193 106.34C430.158 103.778 437.541 101.533 444.87 100.341L444.824 400.575C444.807 422.532 442.777 422.577 465.118 422.237C465.482 407.562 465.232 391.904 465.246 377.163L465.226 120.817C462.446 120.665 458.764 120.751 455.918 120.745C455.774 114.05 455.896 106.915 455.938 100.202L464.761 100.138C470.775 100.107 476.778 99.7583 481.315 104.46C486.707 110.05 485.785 118.608 485.773 125.798L485.728 143.206L485.631 331.559L485.694 401.026C485.702 413.154 486.165 429.837 485.393 441.626C475.84 441.808 465.732 441.646 456.14 441.646L398.489 441.655L398.597 438.116C418.965 435.475 421.282 424.827 420.581 406.602C420.385 401.506 420.546 395.616 420.544 390.472L420.575 213.601C420.566 187.693 420.373 161.293 420.705 135.416C373.464 155.473 334.85 193.815 302.053 232.361C296.522 238.862 291.408 245.661 286.01 252.236C281.893 247.746 278.153 242.188 274.186 237.493C241.094 198.317 199.572 154.697 151.041 135.38L151.065 405.19C151.068 414.247 150.11 425.403 157.466 432.095C162.179 436.381 167.415 437.093 173.438 438.025L173.474 441.666L85.9891 441.672L85.9093 127.896C85.873 115.63 84.178 102.69 99.9377 100.335Z"/>
+    <path fill="currentColor" d="M127.123 49.0145C130.231 49.6654 133.328 50.3681 136.413 51.1216C199.22 66.4701 253.532 127.348 285.978 180.85L292.032 171.238C320.121 127.091 361.745 81.7768 410.012 60.0326C421.801 54.7209 432.268 51.791 444.807 49L444.889 66.3749C444.895 68.4712 445.009 73.4679 444.753 75.3436C444.327 75.4293 443.901 75.5174 443.478 75.6085C391.37 86.7527 346.642 126.398 314.129 167.084C303.859 179.934 294.92 193.727 285.984 207.513C283.803 204.805 278.84 196.76 276.702 193.532C271.823 186.055 266.639 178.78 261.164 171.727C229.36 130.125 185.505 90.1839 133.469 76.708C131.344 76.1578 129.166 75.6727 127.026 75.1712C127.112 66.4524 127.144 57.7335 127.123 49.0145Z"/>
+    <path fill="currentColor" d="M384.136 346.626C384.758 347.132 385.891 348.569 386.402 349.225C398.751 365.107 406.057 388.675 403.745 408.687C400.523 410.973 395.65 413.015 391.97 414.622C359.151 428.965 312.739 422.254 286.164 397.462C272.219 409.539 255.227 417.559 237.041 420.644C217.801 423.989 198.007 421.802 179.961 414.338C176.728 413.006 171.008 410.376 168.235 408.42C168.153 386.272 170.641 372.352 183.061 353.355C184.555 351.049 186.217 348.944 187.886 346.768C189.731 352.94 192.041 357.552 194.918 363.27C188.118 375.681 184.569 384.673 183.835 398.97C189.789 402.282 199.075 404.529 205.878 405.562C224.177 408.34 242.45 405.46 259.123 397.468C263.676 395.287 267.467 393.62 271.614 390.558C283 382.151 283.759 370.83 285.655 358.291C288.591 366.453 288.77 374.693 293.191 382.455C299.825 393.617 318.208 399.916 329.972 403.571C345.666 408.454 373.851 407.531 388.191 399.104C388.406 385.883 383.784 374.573 377.247 363.417C380.618 356.848 382.077 353.744 384.136 346.626Z"/>
+    <path fill="currentColor" d="M199.454 208.274C200.466 208.555 201.431 209.14 202.362 209.647C226.854 223.1 245.009 245.722 252.844 272.55C246.969 271.317 242.074 271.283 236.172 272.087C231.638 257.628 218.483 239.411 205.772 231.104C204.917 235.29 203.446 239.303 202.85 243.612C199.444 268.222 206.704 294.928 222.498 314.17C225.077 317.311 227.699 320.617 231.362 322.497C241.432 325.28 240.975 301.463 240.909 295.649C247.021 295.501 250.443 295.819 256.323 297.549C256.493 303.241 256.291 310.284 255.104 315.814C252.93 325.945 247.821 336.385 236.648 338.43C233.568 338.995 228.913 338.581 226.483 339.126C222.734 339.97 216.435 343.463 213.248 345.59C210.656 340.052 209.959 335.567 209.297 329.634C210.571 328.992 212.006 328.356 213.311 327.748C202.864 314.877 197.401 305.595 192.129 289.938C182.702 261.948 184.377 233.819 199.454 208.274Z"/>
+    <path fill="currentColor" d="M372.684 208.214C373.788 209.355 376.029 213.93 376.815 215.541C382.903 228.026 386.118 242.232 385.851 256.183C385.396 278.947 378.122 301.049 364.969 319.632C361.709 324.247 358.739 327.914 354.772 331.97C346.586 340.331 333.41 341.831 325.159 332.609C316.649 323.097 315.47 309.842 315.95 297.541C322.14 295.88 325.221 295.647 331.417 295.457L331.392 296.863C331.292 303.784 331.133 315.718 336.222 321.438C339.515 325.145 344.152 320.257 346.657 317.704C350.882 313.131 354.562 308.078 357.62 302.651C367.374 285.331 371.619 265.658 369.498 245.76C368.964 240.741 367.683 235.828 366.335 230.979C352.478 239.608 341.938 257.203 336.094 272.153C330.457 271.247 324.704 271.389 319.122 272.571C319.184 272.346 319.247 272.122 319.315 271.9C327.942 243.354 346.634 222.121 372.684 208.214Z"/>
+    <path fill="currentColor" d="M377.758 306.659C378.965 308.02 380.637 316.344 381.126 318.665C388.835 355.365 355.045 399.987 315.7 392.554C304.385 390.415 296.877 384.411 293.947 373.139C290.011 357.986 295.406 350.528 307.758 342.445C301.937 332.044 297.093 325.376 289.514 316.327C292.89 313.078 295.912 310.261 299.668 307.457L300.54 306.972C301.616 307.094 304.115 310.11 304.933 311.076C317.625 326.023 327.842 343.72 331.565 363.15C331.59 364.556 333.677 371.699 332.076 372.346C328.353 373.846 321.311 373.738 317.469 373.096C317.12 366.674 315.959 361.846 313.568 355.902C312.741 356.714 311.927 357.532 311.123 358.364C297.769 372.247 313.02 378.703 326.15 377.575C350.97 375.448 369.009 348.284 366.809 324.578C370.872 317.96 373.803 313.865 377.758 306.659Z"/>
+    <path fill="currentColor" d="M325.545 275.889C337.877 274.177 350.283 279.973 360.384 286.307C358.816 290.877 356.374 297.159 353.589 300.951C351.442 298.761 347.807 296.753 345.064 295.435C310.249 278.729 273.293 322.53 260.567 349.815C256.964 358.362 255.778 364.079 254.528 373.193C249.725 373.749 243.863 373.69 239.241 372.139C241.347 350.821 250.626 331.758 264.031 315.242C279.247 296.489 300.578 278.323 325.545 275.889Z"/>
+    <path fill="currentColor" d="M194.155 306.91C195.303 308.432 197.293 312.158 198.427 313.97C200.642 317.512 202.86 320.747 205.238 324.189C202.975 346.524 219.844 373.216 242.797 377.135C256.356 379.453 275.978 374.991 262.065 357.842C263.595 352.997 265.523 348.933 267.898 344.476C268.524 344.86 269.146 345.249 269.759 345.647C275.197 349.14 278.519 353.417 279.905 359.776C281.347 370.376 276.191 384.926 265.855 389.533C238.705 401.634 210.121 383.966 197.528 359.43C188.196 341.247 188.193 326.01 194.155 306.91Z"/>
+    <path fill="currentColor" d="M263.077 416.89C264.164 417.165 265.038 419.526 265.584 420.548C270.912 430.506 277.477 439.435 285.996 446.908C296.812 437.867 302.323 428.719 309.073 416.83C314.547 419.389 317.603 420.528 323.356 422.42C320.826 428.384 317.009 434.726 313.301 440.014C305.151 451.781 297.831 458.788 286.152 466.843C270.293 457.899 256.579 438.651 249.208 422.335C254.505 420.633 258.131 419.367 263.077 416.89Z"/>
+    <path fill="currentColor" d="M240.065 275.888C242.636 275.525 247.192 275.837 249.783 276.22C262.449 278.095 272.347 282.915 282.524 290.316C278.582 293.852 274.758 297.221 271.188 301.134C265.301 296.917 260.203 294.985 253.434 292.946C252.498 292.722 251.555 292.523 250.607 292.355C238.094 290.225 228.541 293.92 218.508 301.049C215.033 295.315 214.081 292.478 211.849 286.226C221.877 280.552 228.079 276.956 240.065 275.888Z"/>
+    <path fill="currentColor" d="M362.508 330.841C363.783 333.204 360.5 343.056 359.501 345.737L354.753 342.61L351.227 340.514C355.807 337.646 358.729 334.629 362.508 330.841Z"/>
+  </symbol>
+</svg>
+
+<!-- ═════════ HEADER ═════════ -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Memory Codex — home">
+      <svg class="logo-mark" aria-hidden="true"><use href="#mc-mark"/></svg>
+      <span>Memory&nbsp;<b>Codex</b></span>
+      <span class="logo-break" aria-hidden="true"></span>
+      <span class="payoff">AI &amp; Digital Innovation</span>
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#agenti">AI Coworkers</a>
+        <a href="#come-funziona">Metodo</a>
+        <a href="#perche">Valore</a>
+        <a href="#chi-siamo">Chi siamo</a>
+        <a href="#faq">FAQ</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
+     
+      <button class="nav-toggle" type="button" id="navToggle" aria-label="Apri il menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" hidden>
+    <a href="#agenti">AI Coworkers</a>
+    <a href="#come-funziona">Metodo</a>
+    <a href="#perche">Valore</a>
+    <a href="#chi-siamo">Chi siamo</a>
+    <a href="#faq">FAQ</a>
+    <a href="contatti.html">Contatti</a>
+    <button class="btn btn-primary" type="button" data-open-modal>Prenota una call</button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ═════════ HERO ═════════ -->
+  <section class="hero">
+    <div class="mesh-bg mesh-bg--hero" aria-hidden="true"><canvas class="mesh-canvas"></canvas></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        
+        <h1>Assumi il tuo team di <span class="accent">AI Coworkers</span>, sempre operativo.</h1>
+        <p class="hero-sub">Sei professionisti digitali che ti supportano nella gestione di email, amministrazione,
+          vendite, marketing, assistenza e conoscenza aziendale, secondo le regole e gli obiettivi che definisci.
+          Più tempo per te, più velocità per la tua impresa, per concentrarti su ciò che conta davvero.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" type="button" data-open-modal>Prenota una call gratuita
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <a class="btn btn-secondary" href="#agenti">Scopri gli AI Coworkers</a>
+        </div>
+    
+      </div>
+
+      <!-- Visual: pannello "il tuo team" — ogni riga porta alla scheda dell'agente corrispondente -->
+      <div class="team-panel reveal">
+        <div class="team-head">
+          <div class="t-title"><svg class="logo-mark" style="width:22px;height:22px"><use href="#mc-mark"/></svg> Il tuo AI Workforce</div>
+          
+        </div>
+        <button type="button" class="t-row p-concierge" data-target="p-concierge" aria-label="Memory Codex Echo, Personal Assistant — passa il mouse o vai alla scheda">
+          <span class="t-row-flip">
+            <span class="t-row-face t-row-front">
+              <div class="t-ic p-concierge"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex Echo | Personal Assistant</div><div class="t-area">Assistant</div></div>
+              
+            </span>
+            <span class="t-row-face t-row-back">
+              <span class="t-row-tag">Ascolta, organizza e trasforma le parole in azioni.</span>
+              <span class="t-row-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
+            </span>
+          </span>
+        </button>
+        <button type="button" class="t-row p-scribe" data-target="p-scribe" aria-label="Memory Codex Vega, Email Manager — passa il mouse o vai alla scheda">
+          <span class="t-row-flip">
+            <span class="t-row-face t-row-front">
+              <div class="t-ic p-scribe"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex Vega | Email Manager</div><div class="t-area">Email</div></div>
+             
+            </span>
+            <span class="t-row-face t-row-back">
+              <span class="t-row-tag">Gestisce la comunicazione e porta ordine nella posta.</span>
+              <span class="t-row-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
+            </span>
+          </span>
+        </button>
+        <button type="button" class="t-row p-archivist" data-target="p-archivist" aria-label="Memory Codex Atlas, Back Office Manager — passa il mouse o vai alla scheda">
+          <span class="t-row-flip">
+            <span class="t-row-face t-row-front">
+              <div class="t-ic p-archivist"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex Atlas | Back Office Manager</div><div class="t-area">Amministrazione</div></div>
+              
+            </span>
+            <span class="t-row-face t-row-back">
+              <span class="t-row-tag">Organizza dati e documenti, semplificando il lavoro quotidiano.</span>
+              <span class="t-row-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
+            </span>
+          </span>
+        </button>
+        <button type="button" class="t-row p-sage" data-target="p-sage" aria-label="Memory Codex Orion, Knowledge Manager — passa il mouse o vai alla scheda">
+          <span class="t-row-flip">
+            <span class="t-row-face t-row-front">
+              <div class="t-ic p-sage"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex Orion | Knowledge Manager</div><div class="t-area">Documenti</div></div>
+         
+            </span>
+            <span class="t-row-face t-row-back">
+              <span class="t-row-tag">Trova la conoscenza giusta al momento giusto.</span>
+              <span class="t-row-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
+            </span>
+          </span>
+        </button>
+        <button type="button" class="t-row p-herald" data-target="p-herald" aria-label="Memory Codex Nova, Analytics &amp; Intelligence — passa il mouse o vai alla scheda">
+          <span class="t-row-flip">
+            <span class="t-row-face t-row-front">
+              <div class="t-ic p-herald"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex Nova | Analytics &amp; Intelligence</div><div class="t-area">Vendite</div></div>
+              
+            </span>
+            <span class="t-row-face t-row-back">
+              <span class="t-row-tag">Trasforma i dati in insight e decisioni migliori.</span>
+              <span class="t-row-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
+            </span>
+          </span>
+        </button>
+        <button type="button" class="t-row p-muse" data-target="p-muse" aria-label="Memory Codex Lyra, Social Media &amp; Reputation — passa il mouse o vai alla scheda">
+          <span class="t-row-flip">
+            <span class="t-row-face t-row-front">
+              <div class="t-ic p-muse"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex Lyra | Social Media &amp; Reputation</div><div class="t-area">Marketing</div></div>
+              
+            </span>
+            <span class="t-row-face t-row-back">
+              <span class="t-row-tag">Ascolta il mondo digitale e protegge la tua reputazione.</span>
+              <span class="t-row-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="below-hero">
+  <div class="mesh-bg mesh-bg--rest" aria-hidden="true"><canvas class="mesh-canvas"></canvas></div>
+
+  <!-- ═════════ CONCEPT ═════════ -->
+  <section class="concept" aria-label="Il concetto">
+    <div class="wrap">
+      <div class="concept-card reveal">
+        <div>
+          <span class="eyebrow">L'idea</span>
+          <h2 style="margin-top:12px">Non compri un software.<br><span class="accent">Assumi un reparto.</span></h2>
+          <p>Ogni soluzione si comporta come una vera figura professionale: può gestire in autonomia specifiche attività, oppure affiancarti per valorizzare e semplificare il tuo lavoro.
+            </p>
+        </div>
+        <div class="concept-side">
+          <div class="cs-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Un team virtuale al tuo servizio</span></div>
+          <div class="cs-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Ogni AI Coworker presidia un'area precisa della tua attività</span></div>
+          <div class="cs-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>L'AI prepara, tu approvi: nessuna azione critica senza di te</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ AGENTI ═════════ -->
+  <section id="agenti">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">AI Coworkers</span>
+        <h2>Crea il tuo team di professionisti digitali</h2>
+        <p>Attiva solo gli AI Coworkers che ti servono, integrati negli strumenti che usi ogni giorno. </p>
+      </div>
+
+      <div class="grid">
+
+        <!-- 01 · ASSISTANT -->
+        <article class="feature-card p-concierge reveal" tabindex="0" role="button" aria-pressed="false" aria-label="Memory Codex Echo, Personal Assistant — clicca per incontrare l'agente">
+         <div class="flip-inner">
+          <div class="flip-face details-face">
+          <div class="fc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></div>
+            <span class="fc-num">01</span>
+          </div>
+          <span class="card-badge">Assistant</span>
+          <span class="agent-mini">Memory Codex Echo</span>
+          <h3 class="agent-role">Personal Assistant</h3>
+          <p class="fc-tagline">Ascolta, organizza e trasforma le parole in azioni.</p>
+          <p class="desc">Trascrive le riunioni ed estrae le cose da fare, gestisce appuntamenti, conferme e promemoria.</p>
+          <ul class="bullets">
+            <li>Trascrizione riunioni e estrazione di decisioni e obiettivi</li>
+            <li>Scheduling, conferme e reminder degli appuntamenti</li>
+            <li>Ti supporta nelle decisioni</li>
+          </ul>
+          </div>
+          <div class="flip-face robot-face">
+            <div class="robot-env" aria-hidden="true"><span class="robot-aura"></span><i class="robot-mote m1"></i><i class="robot-mote m2"></i><i class="robot-mote m3"></i></div>
+            <div class="robot-stage">
+              <div class="rbt">
+                <span class="rbt-halo"></span>
+                <div class="rbt-float">
+                  <div class="rbt-head">
+                    <span class="rbt-antenna"></span>
+                    <div class="rbt-visor"><span class="rbt-eye l"></span><span class="rbt-eye r"></span></div>
+                  </div>
+                  <div class="rbt-body"><div class="rbt-chest"><i></i><i></i><i></i><i></i><i></i></div></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="robot-name">Memory Codex Echo</h3>
+            <p class="robot-tag">Ascolta, organizza e trasforma le parole in azioni.</p>
+            <span class="flip-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
+          </div>
+         </div>
+        </article>
+
+        <!-- 02 · EMAIL -->
+        <article class="feature-card p-scribe reveal" tabindex="0" role="button" aria-pressed="false" aria-label="Memory Codex Vega, Email Manager — clicca per incontrare l'agente">
+         <div class="flip-inner">
+          <div class="flip-face details-face">
+          <div class="fc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+            <span class="fc-num">02</span>
+          </div>
+          <span class="card-badge">Email</span>
+          <span class="agent-mini">Memory Codex Vega</span>
+          <h3 class="agent-role">Email Manager</h3>
+          <p class="fc-tagline">Gestisce la comunicazione e porta ordine nella posta.</p>
+          <p class="desc">Ordina le email, prepara le risposte pronte da inviare nel tono che scegli e ti segnala solo ciò che conta davvero.</p>
+          <ul class="bullets">
+            <li>Classifica e organizza la posta con etichette e categorie</li>
+            <li>Bozze di risposta nel tono scelto: formale, neutro, friendly, ecc.</li>
+            <li>Trasforma le email in task con scadenza e priorità</li>
+          </ul>
+          </div>
+          <div class="flip-face robot-face">
+            <div class="robot-env" aria-hidden="true"><span class="robot-aura"></span><i class="robot-mote m1"></i><i class="robot-mote m2"></i><i class="robot-mote m3"></i></div>
+            <div class="robot-stage">
+              <div class="rbt">
+                <span class="rbt-halo"></span>
+                <div class="rbt-float">
+                  <div class="rbt-head">
+                    <span class="rbt-antenna"></span>
+                    <div class="rbt-visor"><span class="rbt-eye l"></span><span class="rbt-eye r"></span></div>
+                  </div>
+                  <div class="rbt-body"><div class="rbt-chest"><i></i><i></i><i></i><i></i><i></i></div></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="robot-name">Memory Codex Vega</h3>
+            <p class="robot-tag">Gestisce la comunicazione e porta ordine nella posta.</p>
+            <span class="flip-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
+          </div>
+         </div>
+        </article>
+
+        <!-- 03 · AMMINISTRAZIONE -->
+        <article class="feature-card p-archivist reveal" tabindex="0" role="button" aria-pressed="false" aria-label="Memory Codex Atlas, Back Office Manager — clicca per incontrare l'agente">
+         <div class="flip-inner">
+          <div class="flip-face details-face">
+          <div class="fc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5"/><path d="M8 13h8M8 17h6"/></svg></div>
+            <span class="fc-num">03</span>
+          </div>
+          <span class="card-badge">Amministrazione</span>
+          <span class="agent-mini">Memory Codex Atlas</span>
+          <h3 class="agent-role">Back Office Manager</h3>
+          <p class="fc-tagline">Organizza dati e documenti, semplificando il lavoro quotidiano.</p>
+          <p class="desc">Registra dati e documenti, legge fatture e scontrini e li archivia, ed evade le richieste ricorrenti dei clienti.</p>
+          <ul class="bullets">
+            <li>Popola liste e database da messaggi inviati in linguaggio naturale</li>
+            <li>Customer service di primo livello su FAQ, con escalation all'umano</li>
+            <li>Estrae e organizza le informazioni negli strumenti che utilizzi ogni giorno.</li>
+          </ul>
+          </div>
+          <div class="flip-face robot-face">
+            <div class="robot-env" aria-hidden="true"><span class="robot-aura"></span><i class="robot-mote m1"></i><i class="robot-mote m2"></i><i class="robot-mote m3"></i></div>
+            <div class="robot-stage">
+              <div class="rbt">
+                <span class="rbt-halo"></span>
+                <div class="rbt-float">
+                  <div class="rbt-head">
+                    <span class="rbt-antenna"></span>
+                    <div class="rbt-visor"><span class="rbt-eye l"></span><span class="rbt-eye r"></span></div>
+                  </div>
+                  <div class="rbt-body"><div class="rbt-chest"><i></i><i></i><i></i><i></i><i></i></div></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="robot-name">Memory Codex Atlas</h3>
+            <p class="robot-tag">Organizza dati e documenti, semplificando il lavoro quotidiano.</p>
+            <span class="flip-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
+          </div>
+         </div>
+        </article>
+
+        <!-- 04 · DOCUMENTI -->
+        <article class="feature-card p-sage reveal" tabindex="0" role="button" aria-pressed="false" aria-label="Memory Codex Orion, Knowledge Manager — clicca per incontrare l'agente">
+         <div class="flip-inner">
+          <div class="flip-face details-face">
+          <div class="fc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M4.268 21a2 2 0 0 0 1.727 1H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3"/><path d="m9 18-1.5-1.5"/><circle cx="5" cy="14" r="3"/></svg></div>
+            <span class="fc-num">04</span>
+          </div>
+          <span class="card-badge">Documenti</span>
+          <span class="agent-mini">Memory Codex Orion</span>
+          <h3 class="agent-role">Knowledge Manager</h3>
+          <p class="fc-tagline">Trova la conoscenza giusta al momento giusto.</p>
+          <p class="desc">Legge manuali, procedure interne ed altri documenti aziendali e risponde alle domande tue e del team in linguaggio naturale.</p>
+          <ul class="bullets">
+            <li>Indicizza i documenti aziendali in un'unica base di conoscenza</li>
+            <li>Risponde in linguaggio naturale citando documento e paragrafo di origine</li>
+            <li>Disponibile in qualsiasi momento</li>
+          </ul>
+          </div>
+          <div class="flip-face robot-face">
+            <div class="robot-env" aria-hidden="true"><span class="robot-aura"></span><i class="robot-mote m1"></i><i class="robot-mote m2"></i><i class="robot-mote m3"></i></div>
+            <div class="robot-stage">
+              <div class="rbt">
+                <span class="rbt-halo"></span>
+                <div class="rbt-float">
+                  <div class="rbt-head">
+                    <span class="rbt-antenna"></span>
+                    <div class="rbt-visor"><span class="rbt-eye l"></span><span class="rbt-eye r"></span></div>
+                  </div>
+                  <div class="rbt-body"><div class="rbt-chest"><i></i><i></i><i></i><i></i><i></i></div></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="robot-name">Memory Codex Orion</h3>
+            <p class="robot-tag">Trova la conoscenza giusta al momento giusto.</p>
+            <span class="flip-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
+          </div>
+         </div>
+        </article>
+
+        <!-- 05 · VENDITE -->
+        <article class="feature-card p-herald reveal" tabindex="0" role="button" aria-pressed="false" aria-label="Memory Codex Nova, Analytics &amp; Intelligence — clicca per incontrare l'agente">
+         <div class="flip-inner">
+          <div class="flip-face details-face">
+          <div class="fc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 3-4 3 2 5-6"/></svg></div>
+            <span class="fc-num">05</span>
+          </div>
+          <span class="card-badge">Vendite</span>
+          <span class="agent-mini">Memory Codex Nova</span>
+          <h3 class="agent-role">Analytics &amp; Intelligence</h3>
+          <p class="fc-tagline">Trasforma i dati in insight e decisioni migliori.</p>
+          <p class="desc">Raccoglie vendite, scorte e KPI e li trasforma in un riepilogo chiaro che ricevi via email o messaggistica.</p>
+          <ul class="bullets">
+            <li>Estrazione dei numeri chiave da gestionale o altre fonti</li>
+            <li>Riepilogo in linguaggio naturale</li>
+            <li>Consegna automatica o su richiesta</li>
+          </ul>
+          </div>
+          <div class="flip-face robot-face">
+            <div class="robot-env" aria-hidden="true"><span class="robot-aura"></span><i class="robot-mote m1"></i><i class="robot-mote m2"></i><i class="robot-mote m3"></i></div>
+            <div class="robot-stage">
+              <div class="rbt">
+                <span class="rbt-halo"></span>
+                <div class="rbt-float">
+                  <div class="rbt-head">
+                    <span class="rbt-antenna"></span>
+                    <div class="rbt-visor"><span class="rbt-eye l"></span><span class="rbt-eye r"></span></div>
+                  </div>
+                  <div class="rbt-body"><div class="rbt-chest"><i></i><i></i><i></i><i></i><i></i></div></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="robot-name">Memory Codex Nova</h3>
+            <p class="robot-tag">Trasforma i dati in insight e decisioni migliori.</p>
+            <span class="flip-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
+          </div>
+         </div>
+        </article>
+
+        <!-- 06 · MARKETING -->
+        <article class="feature-card p-muse reveal" tabindex="0" role="button" aria-pressed="false" aria-label="Memory Codex Lyra, Social Media &amp; Reputation — clicca per incontrare l'agente">
+         <div class="flip-inner">
+          <div class="flip-face details-face">
+          <div class="fc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
+            <span class="fc-num">06</span>
+          </div>
+          <span class="card-badge">Marketing</span>
+          <span class="agent-mini">Memory Codex Lyra</span>
+          <h3 class="agent-role">Social Media &amp; Reputation</h3>
+          <p class="fc-tagline">Ascolta il mondo digitale e protegge la tua reputazione.</p>
+          <p class="desc">Monitora recensioni e social, ti propone una risposta già pronta e crea contenuti quando ti servono.</p>
+          <ul class="bullets">
+            <li>Monitoraggio recensioni e social, con alert sulle criticità</li>
+            <li>Bozza di risposta pronta, da approvare prima dell'invio</li>
+            <li>Generazione di contenuti social</li>
+          </ul>
+          </div>
+          <div class="flip-face robot-face">
+            <div class="robot-env" aria-hidden="true"><span class="robot-aura"></span><i class="robot-mote m1"></i><i class="robot-mote m2"></i><i class="robot-mote m3"></i></div>
+            <div class="robot-stage">
+              <div class="rbt">
+                <span class="rbt-halo"></span>
+                <div class="rbt-float">
+                  <div class="rbt-head">
+                    <span class="rbt-antenna"></span>
+                    <div class="rbt-visor"><span class="rbt-eye l"></span><span class="rbt-eye r"></span></div>
+                  </div>
+                  <div class="rbt-body"><div class="rbt-chest"><i></i><i></i><i></i><i></i><i></i></div></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="robot-name">Memory Codex Lyra</h3>
+            <p class="robot-tag">Ascolta il mondo digitale e protegge la tua reputazione.</p>
+            <span class="flip-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
+          </div>
+         </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ IL METODO ═════════ -->
+  <section id="come-funziona">
+    <div class="wrap">
+      <div class="section-head reveal" style="max-width:none">
+        <span class="eyebrow">Il Metodo</span>
+        <h2>Dalla tua esigenza all'automazione</h2>
+        <p>Un approccio guidato, pensato per accompagnarti passo dopo passo, qualunque sia il tuo livello di partenza.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <h3>Ci racconti le tue esigenze</h3>
+          <p>Una call gratuita per capire dove la tua attività perde più tempo e quali attività si possono automatizzare.</p>
+        </div>
+	<div class="step reveal">
+          <div class="step-num">02</div>
+          <h3>Analizziamo il tuo business
+</h3>
+          <p>Studiamo i tuoi processi, individuiamo le attività ripetitive e definiamo dove l'automazione può generare il maggiore impatto.</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <h3>Configuriamo l'AI Workforce</h3>
+          <p>Predisponiamo un team di AI Coworkers su misura, attivando solo quelli realmente utili al tuo business.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">04</div>
+          <h3>Integriamo gli AI Coworkers</h3>
+          <p>I tuoi AI Coworkers entrano nel flusso di lavoro, ma le azioni importanti passano sempre dalla tua approvazione.</p>
+        </div>
+	<div class="step reveal">
+          <div class="step-num">05</div>
+          <h3>Monitoriamo e perfezioniamo </h3>
+          <p>Monitoriamo le automazioni, analizziamo i risultati e perfezioniamo ogni processo per assicurarci che funzioni al meglio.</p>
+        </div>
+
+	<div class="step reveal">
+          <div class="step-num">06</div>
+          <h3>Portiamo l’AI al lavoro</h3>
+          <p>La tua AI Workforce entra in azione e diventa parte integrante del lavoro quotidiano, operando in autonomia al tuo fianco.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ IL VALORE ═════════ -->
+  <section id="perche" aria-label="Il valore">
+    <div class="wrap">
+      <div class="value-split reveal">
+        <div>
+          <span class="eyebrow">Il valore</span>
+          <h2 style="font-size:clamp(23px,3.4vw,32px);font-weight:600;line-height:1.15;letter-spacing:-.02em;margin-top:12px">L'automazione intelligente che fa la differenza</h2>
+          <p style="color:var(--text-2);font-size:16px;margin-top:14px;max-width:46ch">Siamo una giovane realtà con una convinzione semplice: la tecnologia ha valore solo quando semplifica il lavoro. Per questo progettiamo automazioni intelligenti che lavorano dietro le quinte, eliminano le attività ripetitive e lasciano alle persone il controllo delle decisioni.</p>
+        </div>
+        <div class="concept-side">
+          <div class="cs-item">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></div>
+            <span>Migliora le tue performance</span>
+          </div>
+          <div class="cs-item">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <span>Riduci le ore di lavoro</span>
+          </div>
+          <div class="cs-item">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div>
+            <span>Innova la tua attività</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ CHI SIAMO ═════════ -->
+  <section class="concept" id="chi-siamo" aria-label="Chi siamo">
+    <div class="wrap">
+      <div class="concept-card reveal" style="grid-template-columns:1fr">
+        <div>
+          <span class="eyebrow">Chi siamo</span>
+          <h2 style="margin-top:12px">Un team italiano, guidato dalla <span class="accent">passione per l'innovazione.</span></h2>
+          <p style="max-width:none">Memory Codex nasce dalla curiosità, dalla ricerca continua e dalla volontà di rendere l'automazione una risorsa concreta per le PMI italiane. Progettiamo soluzioni intelligenti che semplificano il lavoro quotidiano e accompagniamo ogni azienda dalla prima analisi fino alla piena operatività, con un supporto costante e diretto.</p>
+          <p style="margin-top:14px;font-family:var(--mono);font-size:12.5px;color:var(--text-3)">Memory Codex SRLS — Via Damiano Chiesa, 9A, 38060 Volano (TN) — P.IVA IT02835970225</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ FAQ ═════════ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Domande frequenti</span>
+        <h2>Le domande che riceviamo più spesso</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Devo essere già "digitalizzato" per iniziare?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div class="faq-body">No. Partiamo dagli strumenti che già usi — email, WhatsApp, Excel, il tuo gestionale — e costruiamo l'agente attorno a quelli. L'obiettivo è togliere lavoro ripetitivo, non aggiungere piattaforme da imparare.</div>
+        </details>
+        <details>
+          <summary>Devo occuparmi io degli aspetti tecnici?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div class="faq-body">No, ce ne occupiamo noi. Non servono competenze tecniche né fasi di analisi e progettazione infinite da parte tua: il primo passo è una call gratuita, in cui capiamo insieme come muoverci.</div>
+        </details>
+        <details>
+          <summary>I miei dati sono al sicuro?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div class="faq-body">Lavoriamo solo sui dati necessari all'attività dell'agente e le azioni sensibili passano sempre dalla tua approvazione. Definiamo insieme cosa l'agente può vedere e fare, con l'umano sempre in controllo.</div>
+        </details>
+        <details>
+          <summary>L'AI invia email o pubblica contenuti da sola?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div class="faq-body">No, a meno che tu non lo voglia. Di base l'agente prepara — la bozza di risposta, la risposta a una recensione, il post — e tu approvi. Le azioni importanti restano una tua decisione.</div>
+        </details>
+        <details>
+          <summary>Devo attivare tutti e sei gli agenti?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div class="faq-body">No. Parti con gli agenti di cui hai davvero bisogno e aggiungine altri quando vuoi. Puoi iniziare anche con un solo agente, nell'area che oggi ti fa perdere più tempo.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ CTA FINALE ═════════ -->
+  <section class="cta-final" id="prenota">
+    <div class="wrap">
+      <div class="cta-card reveal">
+        <span class="eyebrow">Iniziamo</span>
+        <h2 style="margin-top:12px">Pronto a mettere il tuo team AI al lavoro?</h2>
+        <p>Raccontaci la tua attività in una call gratuita.</p>
+        <button class="btn btn-primary" type="button" data-open-modal>Prenota una call gratuita
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </section>
+  </div>
+
+</main>
+
+<!-- ═════════ FOOTER ═════════ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <svg class="logo-mark" aria-hidden="true"><use href="#mc-mark"/></svg>
+          <span>Memory&nbsp;<b>Codex</b></span>
+        </div>
+        <div class="footer-payoff">AI &amp; Digital Innovation</div>
+      <br><br>
+        <p style="margin-top:12px;font-family:var(--mono);font-size:12.5px;color:var(--text-3);line-height:1.7">
+          Memory Codex SRLS<br>
+          Via Damiano Chiesa, 9A — 38060 Volano (TN)<br>
+          Tel. <a href="tel:+393762976439" style="color:var(--text-3);text-decoration:underline;text-underline-offset:2px">376 297 6439</a><br>
+          P.IVA IT02835970225
+        </p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Agenti</h4>
+          <a href="#agenti" data-target="p-concierge">Memory Codex Echo | Personal Assistant</a>
+          <a href="#agenti" data-target="p-scribe">Memory Codex Vega | Email Manager</a>
+          <a href="#agenti" data-target="p-archivist">Memory Codex Atlas | Back Office Manager</a>
+          <a href="#agenti" data-target="p-sage">Memory Codex Orion | Knowledge Manager</a>
+          <a href="#agenti" data-target="p-herald">Memory Codex Nova | Analytics &amp; Intelligence</a>
+          <a href="#agenti" data-target="p-muse">Memory Codex Lyra | Social Media &amp; Reputation</a>
+
+
+        </div>
+        <div class="footer-col">
+          <h4>Azienda</h4>
+          <a href="#agenti">AI Coworkers</a>
+          <a href="#come-funziona">Metodo</a>
+          <a href="#perche">Valore</a>
+          <a href="#chi-siamo">Chi siamo</a>
+          <a href="#faq">FAQ</a>
+          <a href="contatti.html">Contatti</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legale</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Memory Codex</span>
+      <span>Made with code, made to remember.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═════════ MODALE "PRENOTA UNA CALL" ═════════ -->
+<div class="modal-overlay" id="bookingOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+    <button class="modal-close" type="button" data-close-modal aria-label="Chiudi">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <span class="eyebrow">Prenota una call</span>
+    <h2 class="modal-title" id="bookingTitle">Raccontaci la tua attività</h2>
+    <p class="modal-sub">Qualche informazione in più ci aiuta a preparare la call e a capire subito dove possiamo darti una mano.</p>
+    <form class="booking-form" id="bookingForm">
+      <div class="field-row">
+        <div class="field">
+          <label for="bf-nome">Nome e cognome *</label>
+          <input id="bf-nome" name="nome" type="text" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="bf-azienda">Azienda *</label>
+          <input id="bf-azienda" name="azienda" type="text" required autocomplete="organization">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="bf-email">Email *</label>
+          <input id="bf-email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="bf-telefono">Telefono</label>
+          <input id="bf-telefono" name="telefono" type="tel" autocomplete="tel">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="bf-settore">Settore</label>
+          <input id="bf-settore" name="settore" type="text" placeholder="Es. commercio, edilizia, studio professionale...">
+        </div>
+        <div class="field">
+          <label for="bf-dimensione">Dimensione azienda</label>
+          <select id="bf-dimensione" name="dimensione">
+            <option value="">Seleziona...</option>
+            <option value="1-5 persone">1–5 persone</option>
+            <option value="6-20 persone">6–20 persone</option>
+            <option value="21-50 persone">21–50 persone</option>
+            <option value="Oltre 50 persone">Oltre 50 persone</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label id="bf-agenti-label">Agenti a cui sei interessato (se lo sai già)</label>
+        <div class="agent-checks" role="group" aria-labelledby="bf-agenti-label">
+          <label class="chk"><input type="checkbox" name="agenti" value="Echo — Assistant"><span>Echo — Assistant</span></label>
+          <label class="chk"><input type="checkbox" name="agenti" value="Vega — Email"><span>Vega — Email</span></label>
+          <label class="chk"><input type="checkbox" name="agenti" value="Atlas — Amministrazione"><span>Atlas — Amministrazione</span></label>
+          <label class="chk"><input type="checkbox" name="agenti" value="Orion — Documenti"><span>Orion — Documenti</span></label>
+          <label class="chk"><input type="checkbox" name="agenti" value="Nova — Vendite"><span>Nova — Vendite</span></label>
+          <label class="chk"><input type="checkbox" name="agenti" value="Lyra — Marketing"><span>Lyra — Marketing</span></label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="bf-messaggio">Cosa vorresti automatizzare, o quale problema vuoi risolvere?</label>
+        <textarea id="bf-messaggio" name="messaggio" rows="4" placeholder="Raccontaci in breve la situazione attuale..."></textarea>
+      </div>
+      <button class="btn btn-primary modal-submit" type="submit">Invia richiesta
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <p class="modal-note">Cliccando su "Invia richiesta" si aprirà il tuo client di posta con i dati già compilati, pronti per essere inviati.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+  /* modale "Prenota una call" — apertura/chiusura e invio via mailto precompilato */
+  (function(){
+    var overlay = document.getElementById('bookingOverlay');
+    var form = document.getElementById('bookingForm');
+    var lastFocused = null;
+
+    function openModal(){
+      lastFocused = document.activeElement;
+      overlay.hidden = false;
+      requestAnimationFrame(function(){ overlay.classList.add('open'); });
+      document.body.style.overflow = 'hidden';
+      var first = form.querySelector('input,select,textarea');
+      if(first) first.focus();
+    }
+    function closeModal(){
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+      window.setTimeout(function(){ overlay.hidden = true; }, 200);
+      if(lastFocused && lastFocused.focus) lastFocused.focus();
+    }
+
+    document.querySelectorAll('[data-open-modal]').forEach(function(b){
+      b.addEventListener('click', openModal);
+    });
+    document.querySelectorAll('[data-close-modal]').forEach(function(b){
+      b.addEventListener('click', closeModal);
+    });
+    overlay.addEventListener('click', function(e){ if(e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && !overlay.hidden) closeModal();
+    });
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var data = new FormData(form);
+      var agenti = data.getAll('agenti').join(', ') || 'Non specificato';
+      var body = [
+        'Nome e cognome: ' + (data.get('nome') || ''),
+        'Azienda: ' + (data.get('azienda') || ''),
+        'Email: ' + (data.get('email') || ''),
+        'Telefono: ' + (data.get('telefono') || '—'),
+        'Settore: ' + (data.get('settore') || '—'),
+        'Dimensione azienda: ' + (data.get('dimensione') || '—'),
+        'Agenti di interesse: ' + agenti,
+        '',
+        'Messaggio:',
+        data.get('messaggio') || '—'
+      ].join('\n');
+      var subject = 'Richiesta call — ' + (data.get('azienda') || data.get('nome') || 'Nuovo contatto');
+      var to = 'info@memorycodex.com';
+      window.location.href = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      form.reset();
+      closeModal();
+    });
+  })();
+
+  /* menu mobile (hamburger) — apertura/chiusura del drawer sotto l'header */
+  (function(){
+    var toggle = document.getElementById('navToggle');
+    var nav = document.getElementById('mobileNav');
+    if(!toggle || !nav) return;
+
+    function openNav(){
+      nav.hidden = false;
+      requestAnimationFrame(function(){ nav.classList.add('open'); });
+      toggle.setAttribute('aria-expanded','true');
+      toggle.setAttribute('aria-label','Chiudi il menu');
+    }
+    function closeNav(){
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      toggle.setAttribute('aria-label','Apri il menu');
+      nav.hidden = true;
+    }
+
+    toggle.addEventListener('click', function(){
+      if(nav.hidden) openNav(); else closeNav();
+    });
+    nav.querySelectorAll('a,button').forEach(function(el){
+      el.addEventListener('click', closeNav);
+    });
+    document.addEventListener('click', function(e){
+      if(!nav.hidden && !nav.contains(e.target) && !toggle.contains(e.target)) closeNav();
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && !nav.hidden) closeNav();
+    });
+    window.addEventListener('resize', function(){
+      if(window.innerWidth >= 860 && !nav.hidden) closeNav();
+    });
+  })();
+</script>
+
+<script>
+  /* sfondo "rete neurale": particelle che scorrono lente su canvas, con linee tra i nodi vicini e bagliore sui punti (estesa a tutto il <main>) */
+  (function(){
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var canvases = document.querySelectorAll('.mesh-canvas');
+    if(!canvases.length) return;
+
+    canvases.forEach(function(canvas){
+      var ctx = canvas.getContext('2d');
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+      var particles = [];
+      var connectDist = 0;
+      var running = false;
+      var raf = null;
+
+      var isHero = canvas.parentElement.classList.contains('mesh-bg--hero');
+
+      function resize(){
+        var rect = canvas.parentElement.getBoundingClientRect();
+        canvas.width = Math.max(1, Math.round(rect.width * dpr));
+        canvas.height = Math.max(1, Math.round(rect.height * dpr));
+        /* la quantità di particelle dipende soprattutto dalla larghezza (non dall'altezza, che varia troppo
+           tra pagine lunghe e corte): così riducendo la larghezza della finestra la densità cala di poco,
+           invece di crollare. L'hero usa la densità "piena" di sempre; il resto della pagina usa una
+           densità leggermente più leggera ma con bias basso (1.5) così i nodi restano ben distribuiti
+           anche scendendo, invece di diradarsi verso il fondo. */
+        var count, bias;
+        if(isHero){
+          count = Math.max(54, Math.min(78, Math.round(45 + rect.width * 0.026)));
+          bias = 1;
+        } else {
+          count = Math.max(100, Math.min(205, Math.round(62 + rect.width * 0.084)));
+          bias = 1.5;
+        }
+        connectDist = Math.max(140, Math.min(260, rect.width * 0.22)) * dpr;
+        particles = [];
+        for(var i=0;i<count;i++){
+          particles.push({
+            x: Math.random()*canvas.width,
+            y: Math.pow(Math.random(), bias)*canvas.height,
+            vx: (Math.random()-0.5)*0.22*dpr,
+            vy: (Math.random()-0.5)*0.22*dpr,
+            r: (Math.random()*1.5+1.1)*dpr,
+            c: (function(){ var rr = Math.random(); return rr < 0.52 ? '95,212,232' : (rr < 0.8 ? '46,111,242' : '244,114,182'); })()
+          });
+        }
+      }
+
+      function frame(){
+        var w = canvas.width, h = canvas.height;
+        ctx.clearRect(0,0,w,h);
+        for(var i=0;i<particles.length;i++){
+          var p = particles[i];
+          p.x += p.vx; p.y += p.vy;
+          if(p.x < 0 || p.x > w) p.vx *= -1;
+          if(p.y < 0 || p.y > h) p.vy *= -1;
+        }
+        for(var i=0;i<particles.length;i++){
+          for(var j=i+1;j<particles.length;j++){
+            var a = particles[i], b = particles[j];
+            var dx = a.x-b.x, dy = a.y-b.y;
+            var dist = Math.sqrt(dx*dx+dy*dy);
+            if(dist < connectDist){
+              ctx.strokeStyle = 'rgba('+a.c+','+((1-dist/connectDist)*0.22).toFixed(3)+')';
+              ctx.lineWidth = dpr*0.7;
+              ctx.beginPath();
+              ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y);
+              ctx.stroke();
+            }
+          }
+        }
+        for(var i=0;i<particles.length;i++){
+          var p = particles[i];
+          ctx.beginPath();
+          ctx.shadowColor = 'rgba('+p.c+',0.65)';
+          ctx.shadowBlur = 6*dpr;
+          ctx.fillStyle = 'rgba('+p.c+',0.48)';
+          ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+          ctx.fill();
+        }
+        ctx.shadowBlur = 0;
+        if(running) raf = requestAnimationFrame(frame);
+      }
+
+      function start(){ if(running || reduceMotion) return; running = true; raf = requestAnimationFrame(frame); }
+      function stop(){ running = false; if(raf) cancelAnimationFrame(raf); }
+
+      resize();
+      frame();
+      if(!reduceMotion){
+        if('IntersectionObserver' in window){
+          var io = new IntersectionObserver(function(entries){
+            entries.forEach(function(en){ en.isIntersecting ? start() : stop(); });
+          }, {threshold:0.01});
+          io.observe(canvas);
+        } else {
+          start();
+        }
+        document.addEventListener('visibilitychange', function(){
+          if(document.hidden) stop(); else start();
+        });
+      }
+      window.addEventListener('resize', function(){
+        resize();
+        if(reduceMotion) frame();
+      });
+    });
+  })();
+</script>
+
+<script>
+  /* reveal on scroll — progressive enhancement, rispetta prefers-reduced-motion */
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(e){io.observe(e)});
+  })();
+
+  /* flip-card agenti — su desktop l'hover (CSS) basta da solo: il click non deve "bloccare" la scheda girata.
+     Su mobile/touch (senza hover) il click/tap resta l'unico modo per girarla, quindi lì funziona da interruttore. */
+  (function(){
+    var cards = document.querySelectorAll('#agenti .feature-card');
+    var hasHover = window.matchMedia('(hover: hover)').matches;
+    function toggle(card){
+      var on = card.classList.toggle('flipped');
+      card.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+    cards.forEach(function(card){
+      if(!hasHover){
+        card.addEventListener('click', function(){ toggle(card); });
+      }
+      card.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar'){
+          e.preventDefault();
+          toggle(card);
+        }
+      });
+    });
+  })();
+
+  /* pannello "Il tuo team" e link agenti nel footer — portano alla scheda dell'agente e la illuminano
+     brevemente (senza girarla: la scheda non resta "bloccata" aperta) */
+  (function(){
+    document.querySelectorAll('[data-target]').forEach(function(row){
+      row.addEventListener('click', function(e){
+        var card = document.querySelector('#agenti .feature-card.' + row.dataset.target);
+        if(!card) return;
+        e.preventDefault();
+        card.scrollIntoView({behavior:'smooth', block:'center'});
+        card.classList.remove('jump-highlight');
+        void card.offsetWidth; /* forza il reflow: permette di far ripartire l'animazione anche su click ravvicinati */
+        card.classList.add('jump-highlight');
+        card.addEventListener('animationend', function handler(){
+          card.classList.remove('jump-highlight');
+          card.removeEventListener('animationend', handler);
+        });
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
