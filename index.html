@@ -25,7 +25,7 @@
     --surface-2:#101a2c;
     --border:rgba(255,255,255,.08);
     --border-soft:rgba(255,255,255,.06);
-    --divider:rgba(95,212,232,.4);   /* separatore logo/payoff header — modifica qui per cambiarne visibilità */
+    --divider:rgba(255,255,255,.7);   /* separatore logo/payoff header — modifica qui per cambiarne visibilità */
     --blue:#2E6FF2;
     --blue-hover:#255ACC;
     --blue-light:#5B8FF9;
@@ -97,7 +97,7 @@
      una sfumatura diversa da quella (identica) usata nel footer. Il separatore verticale è un
      ::before posizionato a parte, così il testo ha lo stesso box (e quindi la stessa resa colore)
      di .footer-payoff. */
-  .payoff{display:inline-block;position:relative;margin-left:14px;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.15em;
+  .payoff{display:inline-block;position:relative;margin-left:14px;font-family:var(--mono);font-size:12.5px;font-weight:500;letter-spacing:.15em;
     text-transform:uppercase;
     background:linear-gradient(120deg,var(--pink),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
   .payoff::before{content:"";position:absolute;left:-14px;top:50%;transform:translateY(-50%);width:1.5px;height:14px;background:var(--divider)}
