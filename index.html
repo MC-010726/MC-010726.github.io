@@ -327,8 +327,8 @@
   .feature-card.p-scribe   {--p:#5FD4E8;--aura-x:50%;--aura-y:18%}   /* Email — ordinato, sereno */
   .feature-card.p-archivist{--p:#E8A552;--aura-x:22%;--aura-y:84%}   /* Amministrazione — archivio caldo */
   .feature-card.p-herald   {--p:#4ED8A0;--aura-x:50%;--aura-y:88%}   /* Vendite — crescita dal basso */
-  .feature-card.p-muse     {--p:#FFDE59;--aura-x:74%;--aura-y:22%}   /* Marketing — giallo */
-  .feature-card.p-concierge{--p:#C7D0DB;--aura-x:50%;--aura-y:48%}   /* Assistant — grigio chiaro, calmo e centrato */
+  .feature-card.p-muse     {--p:#FFDE59;--aura-x:74%;--aura-y:22%}   /* Reputazione — giallo */
+  .feature-card.p-concierge{--p:#C7D0DB;--aura-x:50%;--aura-y:48%}   /* Assistente — grigio chiaro, calmo e centrato */
   .feature-card.p-sage     {--p:#A98CF0;--aura-x:50%;--aura-y:16%}   /* Documenti — saggio, mistico */
   /* stessi colori-personalità applicati al mini-avatar del pannello "Il tuo team" */
   .t-ic.p-scribe   {--p:#5FD4E8}
@@ -547,7 +547,7 @@
   .feature-card.p-herald .rbt-chest i:nth-child(3){height:62%}
   .feature-card.p-herald .rbt-chest i:nth-child(4){height:80%}
   .feature-card.p-herald .rbt-chest i:nth-child(5){height:96%}
-  /* Muse (marketing): onda sonora animata */
+  /* Muse (reputazione): onda sonora animata */
   .feature-card.p-muse .rbt-chest i{height:70%;animation:rb-wave 1.3s ease-in-out infinite}
   /* Scribe (email) & Atlas (documenti/admin): righe di testo */
   .feature-card.p-scribe .rbt-chest,
@@ -560,7 +560,7 @@
   .feature-card.p-scribe .rbt-chest i:nth-child(4){width:52%}
   .feature-card.p-scribe .rbt-chest i:nth-child(5){display:none}
   .feature-card.p-archivist .rbt-chest i:nth-child(5){display:none}
-  /* Echo (assistant): fila di indicatori/stato */
+  /* Echo (assistente): fila di indicatori/stato */
   .feature-card.p-concierge .rbt-chest{align-items:center;gap:6px}
   .feature-card.p-concierge .rbt-chest i{width:7px;height:7px;border-radius:50%;animation:rb-pages 2.4s ease-in-out infinite}
   .feature-card.p-concierge .rbt-chest i:nth-child(4),
@@ -846,10 +846,8 @@
     <div class="wrap hero-grid">
       <div class="hero-copy reveal">
         
-        <h1>Assumi il tuo team di <span class="accent">Collaboratori AI</span>, sempre operativo.</h1>
-        <p class="hero-sub">Sei collaboratori digitali che presidiano le aree chiave della tua impresa — dalla posta
-          all'amministrazione, dalle vendite al marketing — lavorando secondo le regole e gli obiettivi che stabilisci tu.
-          Il risultato: meno tempo perso, più energie per ciò che conta davvero.</p>
+        <h1>Assumi il tuo team di <span class="accent">Collaboratori AI</span>, pronto a lavorare per te.</h1>
+        <p class="hero-sub">Sei collaboratori digitali che presidiano le aree chiave della tua impresa: dalla posta all'amministrazione, dalle vendite alla reputazione online. Lavorano seguendo le tue regole e supportandoti nelle attività di ogni giorno.</p>
         <div class="hero-cta">
           <button class="btn btn-primary" type="button" data-open-modal>Prenota una call gratuita
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
@@ -868,7 +866,7 @@
           <span class="t-row-flip">
             <span class="t-row-face t-row-front">
               <div class="t-ic p-concierge"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
-              <div class="t-meta"><div class="t-role">Memory Codex Echo | Personal Assistant</div><div class="t-area">Assistant</div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex - Echo | Personal Assistant</div><div class="t-area">Assistente</div></div>
               
             </span>
             <span class="t-row-face t-row-back">
@@ -881,7 +879,7 @@
           <span class="t-row-flip">
             <span class="t-row-face t-row-front">
               <div class="t-ic p-scribe"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
-              <div class="t-meta"><div class="t-role">Memory Codex Vega | Email Coordinator</div><div class="t-area">Email</div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex - Vega | Email Coordinator</div><div class="t-area">Email</div></div>
              
             </span>
             <span class="t-row-face t-row-back">
@@ -894,7 +892,7 @@
           <span class="t-row-flip">
             <span class="t-row-face t-row-front">
               <div class="t-ic p-archivist"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
-              <div class="t-meta"><div class="t-role">Memory Codex Atlas | Back Office Manager</div><div class="t-area">Amministrazione</div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex - Atlas | Back Office Manager</div><div class="t-area">Amministrazione</div></div>
               
             </span>
             <span class="t-row-face t-row-back">
@@ -907,7 +905,7 @@
           <span class="t-row-flip">
             <span class="t-row-face t-row-front">
               <div class="t-ic p-sage"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
-              <div class="t-meta"><div class="t-role">Memory Codex Orion | Knowledge Manager</div><div class="t-area">Documenti</div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex - Orion | Knowledge Manager</div><div class="t-area">Documenti</div></div>
          
             </span>
             <span class="t-row-face t-row-back">
@@ -920,20 +918,20 @@
           <span class="t-row-flip">
             <span class="t-row-face t-row-front">
               <div class="t-ic p-herald"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
-              <div class="t-meta"><div class="t-role">Memory Codex Nova | Sales Analyst</div><div class="t-area">Vendite</div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex - Nova | Sales Analyst</div><div class="t-area">Vendite</div></div>
               
             </span>
             <span class="t-row-face t-row-back">
-              <span class="t-row-tag">Trasforma i dati in insight e decisioni migliori.</span>
+              <span class="t-row-tag">Ti avvisa quando i numeri cambiano, prima che sia troppo tardi.</span>
               <span class="t-row-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
             </span>
           </span>
         </button>
-        <button type="button" class="t-row p-muse" data-target="p-muse" aria-label="Memory Codex Lyra, Social Media Manager — passa il mouse o vai alla scheda">
+        <button type="button" class="t-row p-muse" data-target="p-muse" aria-label="Memory Codex Lyra, Reputation Manager — passa il mouse o vai alla scheda">
           <span class="t-row-flip">
             <span class="t-row-face t-row-front">
               <div class="t-ic p-muse"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
-              <div class="t-meta"><div class="t-role">Memory Codex Lyra | Social Media Manager</div><div class="t-area">Marketing</div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex - Lyra | Reputation Manager</div><div class="t-area">Reputazione</div></div>
               
             </span>
             <span class="t-row-face t-row-back">
@@ -955,8 +953,8 @@
       <div class="concept-card reveal">
         <div>
           <span class="eyebrow">L'idea</span>
-          <h2 style="margin-top:12px">Non compri un software.<br><span class="accent">Assumi un reparto.</span></h2>
-          <p>Ogni Collaboratore AI si comporta come una vera figura professionale: presidia la sua area, lavora in autonomia sulle attività operative e ti affianca su quelle che richiedono una tua decisione.
+          <h2 style="margin-top:12px">Non compri un software.<br><span class="accent">Assumi un Team AI.</span></h2>
+          <p>Ogni Collaboratore AI si comporta come una vera figura professionale: presidia la sua area, lavora in autonomia, fornisce feedback e avvisi e ti affianca sulle attività che richiedono una tua decisione.
             </p>
         </div>
         <div class="concept-side">
@@ -974,7 +972,7 @@
       <div class="section-head reveal">
         <span class="eyebrow">Collaboratori AI</span>
         <h2>Crea il tuo team di professionisti digitali</h2>
-        <p>Attiva solo i Collaboratori AI che ti servono, integrati negli strumenti che usi ogni giorno. </p>
+        <p>Attiva i Collaboratori AI che ti servono, tutti insieme o uno alla volta. Ognuno lavora con un ruolo e un perimetro ben definiti.</p>
       </div>
 
       <div class="grid">
@@ -987,15 +985,15 @@
             <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></div>
             <span class="fc-num">01</span>
           </div>
-          <span class="card-badge">Assistant</span>
+          <span class="card-badge">Assistente</span>
           <span class="agent-mini">Memory Codex - Echo</span>
           <h3 class="agent-role">Personal Assistant</h3>
           <p class="fc-tagline">Ascolta, organizza e trasforma le parole in azioni.</p>
-          <p class="desc">Trascrive le riunioni ed estrae le cose da fare, gestisce appuntamenti, conferme e promemoria.</p>
+          <p class="desc">Tiene memoria delle conversazioni e delle decisioni prese durante riunioni, telefonate e messaggi vocali. Organizza le informazioni e crea resoconti e promemoria, così hai sempre sotto controllo ciò che è stato deciso, le scadenze e i prossimi passi.</p>
           <ul class="bullets">
-            <li>Trascrizione riunioni ed estrazione di decisioni e obiettivi</li>
-            <li>Scheduling, conferme e reminder degli appuntamenti</li>
-            <li>Supporto nelle decisioni</li>
+            <li>Trascrizione riunioni ed estrazione di dati e informazioni utili</li>
+            <li>Pianificazione, conferme e promemoria degli appuntamenti</li>
+            <li>Riepilogo delle decisioni prese, con responsabili e scadenze</li>
           </ul>
           </div>
           <div class="flip-face robot-face">
@@ -1031,10 +1029,11 @@
           <span class="agent-mini">Memory Codex - Vega</span>
           <h3 class="agent-role">Email Coordinator</h3>
           <p class="fc-tagline">Gestisce la comunicazione e porta ordine nella posta.</p>
-          <p class="desc">Ordina le email, prepara le risposte pronte da inviare nel tono che scegli e ti segnala solo ciò che conta davvero.</p>
+          <p class="desc">
+Monitora in modo intelligente le caselle email della tua azienda, individua le comunicazioni che richiedono attenzione, prepara le risposte nel tono che scegli e filtra il rumore di fondo. Tu ricevi solo ciò che conta davvero, quando serve il tuo intervento.</p>
           <ul class="bullets">
             <li>Classificazione e organizzazione della posta con etichette e categorie</li>
-            <li>Bozze di risposta nel tono scelto: formale, neutro, friendly, ecc.</li>
+            <li>Bozze di risposta nel tono scelto: formale, neutro, amichevole, ecc.</li>
             <li>Trasformazione delle email in task con scadenze e priorità</li>
           </ul>
           </div>
@@ -1071,11 +1070,11 @@
           <span class="agent-mini">Memory Codex - Atlas</span>
           <h3 class="agent-role">Back Office Manager</h3>
           <p class="fc-tagline">Organizza dati e documenti, semplificando il lavoro quotidiano.</p>
-          <p class="desc">Registra dati e documenti, legge fatture e scontrini e li archivia, evade le richieste ricorrenti dei clienti.</p>
+          <p class="desc">Prende in carico i documenti digitali della tua azienda (fatture, contratti, ordini, certificazioni, ecc.), ne legge i dati principali e li archivia in modo ordinato, sempre ritrovabili.</p>
           <ul class="bullets">
-            <li>Popolamento liste e database da messaggi inviati in linguaggio naturale</li>
-            <li>Customer service di primo livello su FAQ, con escalation all'umano</li>
-            <li>Estrazione e organizzazione delle informazioni negli strumenti che utilizzi ogni giorno</li>
+            <li>Riconoscimento delle tipologie di documento</li>
+            <li>Monitoraggio delle scadenze e degli adempimenti legati alla documentazione</li>
+            <li>Recupero rapido dei documenti e delle informazioni</li>
           </ul>
           </div>
           <div class="flip-face robot-face">
@@ -1111,11 +1110,11 @@
           <span class="agent-mini">Memory Codex - Orion</span>
           <h3 class="agent-role">Knowledge Manager</h3>
           <p class="fc-tagline">Trova la conoscenza giusta al momento giusto.</p>
-          <p class="desc">Legge manuali, procedure interne e altri documenti aziendali e risponde alle domande tue e del team in linguaggio naturale.</p>
+          <p class="desc">Legge manuali, procedure, listini e contratti, poi risponde alle domande tue e dei tuoi collaboratori con parole semplici, dicendo sempre da quale documento arriva la risposta.</p>
           <ul class="bullets">
             <li>Indicizzazione dei documenti aziendali in un'unica base di conoscenza</li>
             <li>Risposte in linguaggio naturale citando documenti e paragrafi di origine</li>
-            <li>Disponibile in qualsiasi momento</li>
+            <li>Consultabile in qualsiasi momento, anche fuori orario</li>
           </ul>
           </div>
           <div class="flip-face robot-face">
@@ -1150,12 +1149,12 @@
           <span class="card-badge">Vendite</span>
           <span class="agent-mini">Memory Codex - Nova</span>
           <h3 class="agent-role">Sales Analyst</h3>
-          <p class="fc-tagline">Trasforma i dati in insight e decisioni migliori.</p>
-          <p class="desc">Raccoglie vendite, scorte e KPI e li trasforma in un riepilogo chiaro che ricevi via email o messaggistica.</p>
+          <p class="fc-tagline">Ti avvisa quando i numeri cambiano, prima che sia troppo tardi.</p>
+          <p class="desc">Sorveglia i dati che scegli di condividere e ti scrive quando qualcosa si muove: il cliente che ha smesso di ordinare, il prodotto che sta rallentando, il margine che si assottiglia senza che nessuno se ne accorga.</p>
           <ul class="bullets">
-            <li>Estrazione dei numeri chiave da gestionale o altre fonti</li>
-            <li>Riepilogo in linguaggio naturale</li>
-            <li>Consegna automatica o su richiesta</li>
+            <li>Monitoraggio di fatturato, margini e clienti che rallentano</li>
+            <li>Riepilogo in parole semplici, senza tabelle da interpretare</li>
+            <li>Report periodico automatico, o una risposta quando la chiedi</li>
           </ul>
           </div>
           <div class="flip-face robot-face">
@@ -1173,29 +1172,29 @@
               </div>
             </div>
             <h3 class="robot-name">Memory Codex <br> <span style="font-size: 1.3em;">Nova</span></h3>
-            <p class="robot-tag">Trasforma i dati in insight e decisioni migliori.</p>
+            <p class="robot-tag">Ti avvisa quando i numeri cambiano, prima che sia troppo tardi.</p>
             <span class="flip-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Scopri cosa fa</span>
           </div>
          </div>
         </article>
 
         <!-- 06 · MARKETING -->
-        <article class="feature-card p-muse reveal" tabindex="0" role="button" aria-pressed="false" aria-label="Memory Codex Lyra, Social Media Manager — clicca per scoprire il Collaboratore AI">
+        <article class="feature-card p-muse reveal" tabindex="0" role="button" aria-pressed="false" aria-label="Memory Codex Lyra, Reputation Manager — clicca per scoprire il Collaboratore AI">
          <div class="flip-inner">
           <div class="flip-face details-face">
           <div class="fc-top">
             <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
             <span class="fc-num">06</span>
           </div>
-          <span class="card-badge">Marketing</span>
+          <span class="card-badge">Reputazione</span>
           <span class="agent-mini">Memory Codex - Lyra</span>
-          <h3 class="agent-role">Social Media Manager</h3>
+          <h3 class="agent-role">Reputation Manager</h3>
           <p class="fc-tagline">Ascolta il mondo digitale e protegge la tua reputazione.</p>
-          <p class="desc">Monitora recensioni e social, ti propone una risposta già pronta e crea contenuti quando ti servono.</p>
+          <p class="desc">Tiene d'occhio quello che si dice della tua attività (ad esempio, nelle recensioni e nei commenti social), ti avvisa subito quando arriva una critica e prepara una risposta quando serve.</p>
           <ul class="bullets">
-            <li>Monitoraggio recensioni e social, con alert sulle criticità</li>
+            <li>Monitoraggio automatico della reputazione online</li>
             <li>Bozza di risposta pronta, da approvare prima dell'invio</li>
-            <li>Generazione dei contenuti social</li>
+            <li>Avviso immediato sulle recensioni negative, riepilogo periodico sul resto</li>
           </ul>
           </div>
           <div class="flip-face robot-face">
@@ -1235,35 +1234,34 @@
         <div class="step reveal">
           <div class="step-num">01</div>
           <h3>Ci racconti le tue esigenze</h3>
-          <p>Una call gratuita per capire dove la tua attività perde più tempo e quali attività si possono automatizzare.</p>
+          <p>Una call gratuita per capire come funziona la tua attività, individuare le operazioni ripetitive, le perdite di tempo e i colli di bottiglia, e raccogliere desideri ed esigenze specifiche.</p>
         </div>
 	<div class="step reveal">
           <div class="step-num">02</div>
-          <h3>Analizziamo il tuo business
-</h3>
-          <p>Studiamo i tuoi processi, individuiamo le attività ripetitive e definiamo dove l'automazione può generare il maggiore impatto.</p>
+        <h3>Elaboriamo una proposta</h3>
+          <p>Analizziamo il tuo business e proponiamo solo i Collaboratori AI che possono generare un reale vantaggio.</p>
         </div>
 
         <div class="step reveal">
           <div class="step-num">03</div>
           <h3>Configuriamo il Team AI</h3>
-          <p>Predisponiamo un team di Collaboratori AI su misura, attivando solo quelli realmente utili al tuo business.</p>
+          <p>Diamo vita al team di Collaboratori AI concordato, configurandolo secondo le regole, i ruoli e le caratteristiche che hai definito.</p>
         </div>
         <div class="step reveal">
           <div class="step-num">04</div>
-          <h3>Integriamo i Collaboratori AI</h3>
-          <p>Colleghiamo i Collaboratori AI ai tuoi strumenti — email, gestionale, messaggistica — e li mettiamo a punto sui tuoi processi reali.</p>
+          <h3>Attiviamo i Collaboratori AI</h3>
+          <p>Rendiamo operativi i Collaboratori AI, inizialmente in un contesto controllato, per verificarne il funzionamento.</p>
         </div>
 	<div class="step reveal">
           <div class="step-num">05</div>
-          <h3>Monitoriamo e perfezioniamo </h3>
+          <h3>Monitoriamo e perfezioniamo</h3>
           <p>Monitoriamo i risultati e affiniamo ogni automazione finché non lavora esattamente come serve a te.</p>
         </div>
 
 	<div class="step reveal">
           <div class="step-num">06</div>
           <h3>Portiamo l'AI al lavoro</h3>
-          <p>Da qui il team opera in autonomia al tuo fianco, giorno dopo giorno, con le azioni importanti che restano una tua conferma.</p>
+          <p>Il tuo team di Collaboratori AI lavora al tuo fianco, in autonomia, giorno dopo giorno.</p>
         </div>
       </div>
     </div>
@@ -1275,8 +1273,8 @@
       <div class="value-split reveal">
         <div>
           <span class="eyebrow">Il valore</span>
-          <h2 style="font-size:clamp(23px,3.4vw,32px);font-weight:600;line-height:1.15;letter-spacing:-.02em;margin-top:12px">L'automazione intelligente che fa la differenza</h2>
-          <p style="color:var(--text-2);font-size:16px;margin-top:14px;max-width:46ch">Siamo una realtà innovativa con una convinzione semplice: la tecnologia ha valore solo quando migliora concretamente il modo di lavorare. Per questo i Collaboratori AI operano dietro le quinte, eliminano le attività ripetitive e lasciano a te il controllo delle decisioni.</p>
+          <h2 style="font-size:clamp(23px,3.4vw,32px);font-weight:600;line-height:1.15;letter-spacing:-.02em;margin-top:12px">La soluzione intelligente che fa la differenza</h2>
+          <p style="color:var(--text-2);font-size:16px;margin-top:14px;max-width:46ch">Siamo una realtà innovativa con una convinzione semplice: la tecnologia ha valore solo quando migliora concretamente il modo di lavorare. Per questo aiutiamo le PMI a innovare in modo graduale e consapevole, partendo dalle loro esigenze.</p>
         </div>
         <div class="concept-side">
           <div class="cs-item">
@@ -1321,19 +1319,19 @@
       <div class="faq reveal">
         <details>
           <summary>Devo essere già "digitalizzato" per iniziare?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
-          <div class="faq-body">No. Partiamo dagli strumenti che già usi — email, WhatsApp, Excel, il tuo gestionale — e costruiamo la soluzione attorno a quelli. L'obiettivo è togliere lavoro ripetitivo, non aggiungere piattaforme da imparare.</div>
+          <div class="faq-body">No. Non devi essere già digitalizzato per iniziare. Ti accompagniamo in ogni fase del percorso di innovazione, partendo da dove sei oggi e individuando insieme le soluzioni AI e tecnologiche più adatte alla tua azienda.</div>
         </details>
         <details>
           <summary>Devo occuparmi io degli aspetti tecnici?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
-          <div class="faq-body">No, ce ne occupiamo noi. Non servono competenze tecniche né fasi di analisi e progettazione infinite da parte tua: il primo passo è una call gratuita, in cui capiamo insieme come muoverci.</div>
+          <div class="faq-body">No, ci occupiamo noi degli aspetti tecnici. Ti coinvolgiamo solo dove è necessario e facciamo insieme le configurazioni che richiedono il tuo intervento, restando al tuo fianco. L'analisi, la configurazione e tutte le altre fasi tecniche sono gestite da noi.</div>
         </details>
         <details>
           <summary>I miei dati sono al sicuro?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
-          <div class="faq-body">Lavoriamo solo sui dati necessari all'attività dei Collaboratori AI, e definiamo insieme a te cosa l'AI può vedere e cosa no. Nulla viene toccato al di fuori di quel perimetro.</div>
+          <div class="faq-body">Sì. Lavoriamo solo sui dati necessari all'attività dei Collaboratori AI: definiamo insieme a te, prima di partire, a cosa l'AI può accedere e a cosa no. Gli accessi sono limitati a quel perimetro, restano tuoi e puoi revocarli in qualsiasi momento.</div>
         </details>
         <details>
           <summary>L'AI invia email o pubblica contenuti da sola?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
-          <div class="faq-body">No, a meno che tu non lo voglia. Di base l'AI prepara — la bozza di risposta, la risposta a una recensione, il post — e tu approvi. Le azioni importanti restano una tua decisione.</div>
+          <div class="faq-body">No. L'AI prepara, tu approvi: nessuna email parte e nessun contenuto viene pubblicato senza il tuo via libera. Se in seguito vorrai automatizzare del tutto qualche passaggio ripetitivo, lo decidiamo insieme e solo per i casi che scegli tu.</div>
         </details>
         <details>
           <summary>Devo attivare tutti e sei i Collaboratori AI?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
@@ -1380,12 +1378,12 @@
       <div class="footer-cols">
         <div class="footer-col">
           <h4>Collaboratori AI</h4>
-          <a href="#agenti" data-target="p-concierge">Memory Codex Echo | Personal Assistant</a>
-          <a href="#agenti" data-target="p-scribe">Memory Codex Vega | Email Coordinator</a>
-          <a href="#agenti" data-target="p-archivist">Memory Codex Atlas | Back Office Manager</a>
-          <a href="#agenti" data-target="p-sage">Memory Codex Orion | Knowledge Manager</a>
-          <a href="#agenti" data-target="p-herald">Memory Codex Nova | Sales Analyst</a>
-          <a href="#agenti" data-target="p-muse">Memory Codex Lyra | Social Media Manager</a>
+          <a href="#agenti" data-target="p-concierge">Memory Codex - Echo | Personal Assistant</a>
+          <a href="#agenti" data-target="p-scribe">Memory Codex - Vega | Email Coordinator</a>
+          <a href="#agenti" data-target="p-archivist">Memory Codex - Atlas | Back Office Manager</a>
+          <a href="#agenti" data-target="p-sage">Memory Codex - Orion | Knowledge Manager</a>
+          <a href="#agenti" data-target="p-herald">Memory Codex - Nova | Sales Analyst</a>
+          <a href="#agenti" data-target="p-muse">Memory Codex - Lyra | Reputation Manager</a>
 
 
         </div>
@@ -1461,12 +1459,12 @@
       <div class="field">
         <label id="bf-agenti-label">Collaboratori AI a cui sei interessato (se lo sai già)</label>
         <div class="agent-checks" role="group" aria-labelledby="bf-agenti-label">
-                    <label class="chk"><input type="checkbox" name="agenti" value="Echo — Assistant"><span>Echo — Assistant</span></label>
+                    <label class="chk"><input type="checkbox" name="agenti" value="Echo — Assistente"><span>Echo — Assistente</span></label>
           <label class="chk"><input type="checkbox" name="agenti" value="Vega — Email"><span>Vega — Email</span></label>
           <label class="chk"><input type="checkbox" name="agenti" value="Atlas — Amministrazione"><span>Atlas — Amministrazione</span></label>
           <label class="chk"><input type="checkbox" name="agenti" value="Orion — Documenti"><span>Orion — Documenti</span></label>
           <label class="chk"><input type="checkbox" name="agenti" value="Nova — Vendite"><span>Nova — Vendite</span></label>
-          <label class="chk"><input type="checkbox" name="agenti" value="Lyra — Marketing"><span>Lyra — Marketing</span></label>
+          <label class="chk"><input type="checkbox" name="agenti" value="Lyra — Reputazione"><span>Lyra — Reputazione</span></label>
         </div>
       </div>
       <div class="field">
@@ -1476,7 +1474,7 @@
       <button class="btn btn-primary modal-submit" type="submit">Invia richiesta
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </button>
-      <p class="modal-note">Cliccando su "Invia richiesta" si aprirà il tuo client di posta con i dati già compilati, pronti per essere inviati.</p>
+      <p class="modal-note">Quando clicchi su "Invia richiesta" si aprirà il tuo client di posta con i dati già compilati, pronti per essere inviati.</p>
     </form>
   </div>
 </div>
