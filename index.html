@@ -297,7 +297,7 @@
   .t-ic.p-scribe    .t-ic-eye{width:3.5px;height:7.5px;border-radius:2px}                 /* Email — precisi, a "riga di testo" */
   .t-ic.p-archivist .t-ic-eye{width:6px;height:6px;border-radius:1.5px}                   /* Amministrazione — squadrati, solidi */
   .t-ic.p-herald    .t-ic-eye{width:6.5px;height:6.5px;border-radius:50%}                 /* Vendite — come Muse, tondi */
-  .t-ic.p-sage      .t-ic-eye{width:6.5px;height:7.5px;border-radius:0;clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%)} /* Documenti — esagonali, mistici */
+  .t-ic.p-sage      .t-ic-eye{width:6.5px;height:7.5px;border-radius:0;clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%)} /* Conoscenza — esagonali, mistici */
   .t-meta{min-width:0;flex:1}
   .t-role{font-size:14px;font-weight:500;line-height:1.2}
   .t-area{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-3);margin-top:2px}
@@ -348,7 +348,7 @@
   .feature-card.p-herald   {--p:#4ED8A0;--aura-x:50%;--aura-y:88%}   /* Vendite — crescita dal basso */
   .feature-card.p-muse     {--p:#FFDE59;--aura-x:74%;--aura-y:22%}   /* Reputazione — giallo */
   .feature-card.p-concierge{--p:#C7D0DB;--aura-x:50%;--aura-y:48%}   /* Assistente — grigio chiaro, calmo e centrato */
-  .feature-card.p-sage     {--p:#A98CF0;--aura-x:50%;--aura-y:16%}   /* Documenti — saggio, mistico */
+  .feature-card.p-sage     {--p:#A98CF0;--aura-x:50%;--aura-y:16%}   /* Conoscenza — saggio, mistico */
   /* stessi colori-personalità applicati al mini-avatar del pannello "Il tuo team" */
   .t-ic.p-scribe   {--p:#5FD4E8}
   .t-ic.p-archivist{--p:#E8A552}
@@ -522,7 +522,7 @@
   .feature-card.p-scribe    .rbt-eye{width:11px;height:22px;border-radius:5px}            /* Email — precisi, a "riga di testo" */
   .feature-card.p-archivist .rbt-eye{width:18px;height:18px;border-radius:5px}            /* Amministrazione — squadrati, solidi */
   .feature-card.p-herald    .rbt-eye{width:19px;height:19px;border-radius:50%}            /* Vendite — come Muse, tondi */
-  .feature-card.p-sage      .rbt-eye{width:18px;height:20px;border-radius:0;clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%)} /* Documenti — esagonali, mistici */
+  .feature-card.p-sage      .rbt-eye{width:18px;height:20px;border-radius:0;clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%)} /* Conoscenza — esagonali, mistici */
 
   /* CORPO — mantello che sfuma e fluttua, con "mani" di luce */
   .rbt-body{
@@ -1040,11 +1040,11 @@
             </span>
           </span>
         </button>
-        <button type="button" class="t-row p-archivist" data-target="p-archivist" aria-label="Memory Codex Atlas, Back Office Manager — vai alla scheda">
+        <button type="button" class="t-row p-archivist" data-target="p-archivist" aria-label="Memory Codex Atlas, Document Manager — vai alla scheda">
           <span class="t-row-flip">
             <span class="t-row-face t-row-front">
               <div class="t-ic p-archivist"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
-              <div class="t-meta"><div class="t-role">Memory Codex - Atlas | Back Office Manager</div><div class="t-area">Amministrazione</div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex - Atlas | Document Manager</div><div class="t-area">Amministrazione</div></div>
               
             </span>
             <span class="t-row-face t-row-back">
@@ -1057,7 +1057,7 @@
           <span class="t-row-flip">
             <span class="t-row-face t-row-front">
               <div class="t-ic p-sage"><span class="t-ic-antenna"></span><div class="t-ic-visor"><span class="t-ic-eye l"></span><span class="t-ic-eye r"></span></div></div>
-              <div class="t-meta"><div class="t-role">Memory Codex - Orion | Knowledge Manager</div><div class="t-area">Documenti</div></div>
+              <div class="t-meta"><div class="t-role">Memory Codex - Orion | Knowledge Manager</div><div class="t-area">Conoscenza</div></div>
          
             </span>
             <span class="t-row-face t-row-back">
@@ -1211,7 +1211,7 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
         </article>
 
         <!-- 03 · AMMINISTRAZIONE -->
-        <article class="feature-card p-archivist reveal" tabindex="0" role="button" aria-pressed="false" aria-label="Memory Codex Atlas, Back Office Manager — scopri cosa fa">
+        <article class="feature-card p-archivist reveal" tabindex="0" role="button" aria-pressed="false" aria-label="Memory Codex Atlas, Document Manager — scopri cosa fa">
          <div class="flip-inner">
           <div class="flip-face details-face">
           <div class="fc-top">
@@ -1220,7 +1220,7 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
           </div>
           <span class="card-badge">Amministrazione</span>
           <span class="agent-mini">Memory Codex - Atlas</span>
-          <h3 class="agent-role">Back Office Manager</h3>
+          <h3 class="agent-role">Document Manager</h3>
           <p class="fc-tagline">Organizza dati e documenti, semplificando il lavoro quotidiano.</p>
           <p class="desc">Prende in carico i documenti digitali della tua azienda (fatture, contratti, ordini, certificazioni, ecc.), ne legge i dati principali e li archivia in modo ordinato, così da renderli sempre ritrovabili.</p>
           <ul class="bullets">
@@ -1250,7 +1250,7 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
          </div>
         </article>
 
-        <!-- 04 · DOCUMENTI -->
+        <!-- 04 · CONOSCENZA -->
         <article class="feature-card p-sage reveal" tabindex="0" role="button" aria-pressed="false" aria-label="Memory Codex Orion, Knowledge Manager — scopri cosa fa">
          <div class="flip-inner">
           <div class="flip-face details-face">
@@ -1258,7 +1258,7 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
             <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M4.268 21a2 2 0 0 0 1.727 1H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3"/><path d="m9 18-1.5-1.5"/><circle cx="5" cy="14" r="3"/></svg></div>
             <span class="fc-num">04</span>
           </div>
-          <span class="card-badge">Documenti</span>
+          <span class="card-badge">Conoscenza</span>
           <span class="agent-mini">Memory Codex - Orion</span>
           <h3 class="agent-role">Knowledge Manager</h3>
           <p class="fc-tagline">Trova la conoscenza giusta al momento giusto.</p>
@@ -1532,7 +1532,7 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
           <h4>Collaboratori AI</h4>
           <a href="#agenti" data-target="p-concierge">Memory Codex - Echo | Personal Assistant</a>
           <a href="#agenti" data-target="p-scribe">Memory Codex - Vega | Email Coordinator</a>
-          <a href="#agenti" data-target="p-archivist">Memory Codex - Atlas | Back Office Manager</a>
+          <a href="#agenti" data-target="p-archivist">Memory Codex - Atlas | Document Manager</a>
           <a href="#agenti" data-target="p-sage">Memory Codex - Orion | Knowledge Manager</a>
           <a href="#agenti" data-target="p-herald">Memory Codex - Nova | Sales Analyst</a>
           <a href="#agenti" data-target="p-muse">Memory Codex - Lyra | Reputation Manager</a>
@@ -1614,7 +1614,7 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
                     <label class="chk"><input type="checkbox" name="agenti" value="Echo — Assistente"><span>Echo — Assistente</span></label>
           <label class="chk"><input type="checkbox" name="agenti" value="Vega — Email"><span>Vega — Email</span></label>
           <label class="chk"><input type="checkbox" name="agenti" value="Atlas — Amministrazione"><span>Atlas — Amministrazione</span></label>
-          <label class="chk"><input type="checkbox" name="agenti" value="Orion — Documenti"><span>Orion — Documenti</span></label>
+          <label class="chk"><input type="checkbox" name="agenti" value="Orion — Conoscenza"><span>Orion — Conoscenza</span></label>
           <label class="chk"><input type="checkbox" name="agenti" value="Nova — Vendite"><span>Nova — Vendite</span></label>
           <label class="chk"><input type="checkbox" name="agenti" value="Lyra — Reputazione"><span>Lyra — Reputazione</span></label>
         </div>
