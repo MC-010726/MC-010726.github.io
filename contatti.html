@@ -385,6 +385,24 @@
     transition:border-color .18s ease;
   }
   .feature-card:hover .flip-face{border-color:rgba(95,212,232,.32)}
+  /* Firefox: backface-visibility non nasconde sempre i figli con effetti 3D/filtri della faccia (robottino, alone…),
+     che traspaiono sul retro durante e dopo il giro. Solo su Firefox, la faccia che finisce dietro viene nascosta
+     con visibility, nell'istante in cui la rotazione supera i 90° (~15% della durata, per la curva usata). */
+  @supports (-moz-appearance:none){
+    .robot-face{transition:border-color .18s ease,visibility 0s linear .1s}
+    .details-face{transition:border-color .18s ease,visibility 0s linear .1s;visibility:hidden}
+    .feature-card.flipped .robot-face{visibility:hidden}
+    .feature-card.flipped .details-face{visibility:visible}
+    @media(hover:hover){
+      .feature-card:hover .robot-face{visibility:hidden}
+      .feature-card:hover .details-face{visibility:visible}
+    }
+    .t-row-face{transition:border-color .18s ease,visibility 0s linear .09s}
+    .t-row-back{visibility:hidden}
+    .t-row:hover .t-row-front,.t-row:focus-visible .t-row-front{visibility:hidden}
+    .t-row:hover .t-row-back,.t-row:focus-visible .t-row-back{visibility:visible}
+    @media(prefers-reduced-motion:reduce){.robot-face,.details-face,.t-row-face{transition:none}}
+  }
 
   /* FACCIA INIZIALE — il robottino con la sua personalità (colore + ambiente) */
   .robot-face{
