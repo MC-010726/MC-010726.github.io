@@ -829,6 +829,20 @@
   .consent-note{font-size:12.5px;color:var(--text-3);margin-top:8px}
   .modal-submit{width:100%;justify-content:center;margin-top:6px;font-size:15px;padding:13px 22px}
   .modal-note{font-size:12.5px;color:var(--text-3);margin-top:2px}
+  .modal-submit[disabled]{opacity:.6;cursor:progress}
+  /* campo esca per i bot: fuori schermo, non nascosto con display:none che alcuni bot riconoscono */
+  .hp-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  .form-error{font-size:13.5px;line-height:1.5;color:var(--text);background:rgba(244,114,182,.08);
+    border:1px solid rgba(244,114,182,.4);border-radius:9px;padding:11px 13px}
+  .form-error a{color:var(--blue-light);text-decoration:underline;text-underline-offset:2px}
+  /* dopo l'invio la modale mostra solo la conferma */
+  .modal.is-sent .booking-intro,.modal.is-sent .booking-form{display:none}
+  .booking-success{text-align:center;padding:12px 0 4px}
+  .booking-success .bs-icon{width:52px;height:52px;margin:0 auto 18px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;color:var(--cyan);
+    background:rgba(95,212,232,.1);border:1px solid rgba(95,212,232,.35)}
+  .booking-success .bs-icon svg{width:24px;height:24px}
+  .booking-success p{color:var(--text-2);font-size:14.5px;max-width:42ch;margin:0 auto 24px}
 
   /* ---- Modali "Privacy" e "Cookie policy": documento di testo, non un form ----
      stessa scocca della modale "Prenota una call" (.modal-overlay/.modal), con una
@@ -1585,10 +1599,14 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
     <button class="modal-close" type="button" data-close-modal aria-label="Chiudi">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
     </button>
-    <span class="eyebrow">Prenota una call</span>
-    <h2 class="modal-title" id="bookingTitle">Raccontaci la tua attività</h2>
-    <p class="modal-sub">Qualche informazione in più ci aiuta a preparare la call e a capire subito dove possiamo darti una mano.</p>
-    <form class="booking-form" id="bookingForm">
+    <span class="eyebrow booking-intro">Prenota una call</span>
+    <h2 class="modal-title booking-intro" id="bookingTitle">Raccontaci la tua attività</h2>
+    <p class="modal-sub booking-intro">Qualche informazione in più ci aiuta a preparare la call e a capire subito dove possiamo darti una mano.</p>
+    <form class="booking-form" id="bookingForm" action="https://formspree.io/f/mqpajvqz" method="POST">
+      <div class="hp-field" aria-hidden="true">
+        <label for="bf-gotcha">Lascia vuoto questo campo</label>
+        <input id="bf-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+      </div>
       <div class="field-row">
         <div class="field">
           <label for="bf-nome">Nome e cognome *</label>
@@ -1650,20 +1668,37 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
       <button class="btn btn-primary modal-submit" type="submit">Invia richiesta
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </button>
-      <p class="modal-note">Quando clicchi su "Invia richiesta" si aprirà il tuo client di posta con i dati già compilati, pronti per essere inviati.</p>
+      <p class="form-error" id="bookingError" role="alert" hidden>Non siamo riusciti a inviare la richiesta. Riprova tra qualche istante, oppure scrivici direttamente a <a href="mailto:info@memorycodex.com">info@memorycodex.com</a>.</p>
+      <p class="modal-note">Ti rispondiamo via email all'indirizzo che ci indichi, per fissare insieme giorno e ora della call.</p>
     </form>
+    <div class="booking-success" id="bookingSuccess" hidden>
+      <div class="bs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <h2 class="modal-title" id="bookingSuccessTitle" tabindex="-1">Richiesta inviata</h2>
+      <p>Grazie! Abbiamo ricevuto i tuoi dati: ti scriviamo a breve per fissare la call.</p>
+      <button class="btn btn-secondary" type="button" data-close-modal>Chiudi</button>
+    </div>
   </div>
 </div>
 
 <script>
-  /* modale "Prenota una call" — apertura/chiusura e invio via mailto precompilato */
+  /* modale "Prenota una call" — apertura/chiusura e invio tramite Formspree, che inoltra la richiesta a info@ */
   (function(){
     var overlay = document.getElementById('bookingOverlay');
+    var modal = overlay.querySelector('.modal');
     var form = document.getElementById('bookingForm');
+    var errorBox = document.getElementById('bookingError');
+    var success = document.getElementById('bookingSuccess');
+    var submitBtn = form.querySelector('.modal-submit');
     var lastFocused = null;
 
     function openModal(){
       lastFocused = document.activeElement;
+      // se la modale era rimasta sulla conferma di un invio precedente, torna al modulo vuoto
+      if(modal.classList.contains('is-sent')){
+        modal.classList.remove('is-sent');
+        success.hidden = true;
+        modal.setAttribute('aria-labelledby', 'bookingTitle');
+      }
       overlay.hidden = false;
       requestAnimationFrame(function(){ overlay.classList.add('open'); });
       document.body.style.overflow = 'hidden';
@@ -1690,27 +1725,29 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
 
     form.addEventListener('submit', function(e){
       e.preventDefault();
+      if(submitBtn.disabled) return;
       var data = new FormData(form);
+      // le caselle dei collaboratori arrivano come un'unica riga leggibile nell'email
       var agenti = data.getAll('agenti').join(', ') || 'Non specificato';
-      var body = [
-        'Nome e cognome: ' + (data.get('nome') || ''),
-        'Azienda: ' + (data.get('azienda') || ''),
-        'Email: ' + (data.get('email') || ''),
-        'Telefono: ' + (data.get('telefono') || '—'),
-        'Settore: ' + (data.get('settore') || '—'),
-        'Dimensione azienda: ' + (data.get('dimensione') || '—'),
-        'Collaboratori AI di interesse: ' + agenti,
-        '',
-        'Messaggio:',
-        data.get('messaggio') || '—',
-        '',
-        '— Consenso privacy: dichiarato di aver letto l\'informativa e prestato il consenso al trattamento dei dati il ' + new Date().toLocaleString('it-IT') + '.'
-      ].join('\n');
-      var subject = 'Richiesta call — ' + (data.get('azienda') || data.get('nome') || 'Nuovo contatto');
-      var to = 'info@memorycodex.com';
-      window.location.href = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      form.reset();
-      closeModal();
+      data.delete('agenti');
+      data.set('agenti', agenti);
+      data.set('privacy', 'Informativa letta e consenso prestato il ' + new Date().toLocaleString('it-IT'));
+      data.set('_subject', 'Richiesta call — ' + (data.get('azienda') || data.get('nome') || 'Nuovo contatto'));
+
+      errorBox.hidden = true;
+      submitBtn.disabled = true;
+      fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
+        .then(function(res){
+          if(!res.ok) throw new Error('HTTP ' + res.status);
+          form.reset();
+          modal.classList.add('is-sent');
+          success.hidden = false;
+          modal.setAttribute('aria-labelledby', 'bookingSuccessTitle');
+          modal.scrollTop = 0;
+          document.getElementById('bookingSuccessTitle').focus();
+        })
+        .catch(function(){ errorBox.hidden = false; })
+        .then(function(){ submitBtn.disabled = false; });
     });
   })();
 
@@ -1950,7 +1987,7 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
       </ul>
 
       <h3>Com'&egrave; fatto il sito e dove si trova</h3>
-      <p>Queste pagine sono statiche: non c'&egrave; un database, non c'&egrave; un'area riservata e non gira alcun programma lato server che riceva o salvi quello che scrivi.</p>
+      <p>Queste pagine sono statiche: non c'&egrave; un database, non c'&egrave; un'area riservata e non gira alcun nostro programma lato server. L'unico dato che esce dalla pagina &egrave; quello che invii con il modulo &laquo;Prenota una call&raquo;, descritto pi&ugrave; sotto.</p>
       <ul>
         <li>I file sono pubblicati con <strong>GitHub Pages</strong>, servizio di GitHub, Inc. (Stati Uniti, gruppo Microsoft), che si occupa quindi dell'hosting.</li>
         <li>Il dominio memorycodex.com &egrave; registrato presso <strong>Aruba S.p.A.</strong> (Italia), che ne gestisce i DNS: Aruba indirizza il traffico verso GitHub, ma non ospita le pagine e non tratta i dati di chi le visita.</li>
@@ -1958,7 +1995,7 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
       </ul>
 
       <h3>Il modulo &laquo;Prenota una call&raquo;</h3>
-      <p>Il modulo non invia nulla a questo sito e non salva i dati da nessuna parte: alla conferma apre il tuo programma di posta con il testo gi&agrave; compilato. I dati arrivano a noi solo se sei tu a inviare l'email, e restano nella nostra casella di posta.</p>
+      <p>Quando premi &laquo;Invia richiesta&raquo;, i dati del modulo vengono trasmessi a <strong>Formspree</strong>, servizio di Formspree, Inc. (Stati Uniti), che ce li inoltra per email alla casella <a href="mailto:info@memorycodex.com">info@memorycodex.com</a>. Formspree conserva anche una copia della richiesta nel nostro account sul servizio, che cancella automaticamente dopo 30 giorni. Il modulo contiene anche un campo nascosto anti-spam, che non raccoglie dati su di te.</p>
 
       <h3>Perch&eacute; li trattiamo</h3>
       <ul>
@@ -1969,17 +2006,18 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
       <p>Non usiamo i tuoi dati per invii commerciali automatici, non li vendiamo e non li cediamo a terzi per finalit&agrave; di marketing.</p>
 
       <h3>Per quanto tempo</h3>
-      <p>Conserviamo le email nella casella per il tempo necessario a gestire la richiesta e i rapporti che ne derivano, e comunque entro i limiti previsti dagli obblighi di legge, in particolare fiscali e contabili. I log tecnici delle richieste web restano in mano a GitHub, che li conserva e li cancella secondo le proprie regole: non passano da noi e non possiamo intervenire sui loro tempi. I dati di statistica restano disponibili in Google Analytics per il periodo di conservazione impostato nella propriet&agrave;, decorso il quale Google li elimina.</p>
+      <p>Conserviamo le email nella casella per il tempo necessario a gestire la richiesta e i rapporti che ne derivano, e comunque entro i limiti previsti dagli obblighi di legge, in particolare fiscali e contabili. La copia delle richieste conservata su Formspree viene cancellata automaticamente dopo 30 giorni. I log tecnici delle richieste web restano in mano a GitHub, che li conserva e li cancella secondo le proprie regole: non passano da noi e non possiamo intervenire sui loro tempi. I dati di statistica restano disponibili in Google Analytics per il periodo di conservazione impostato nella propriet&agrave;, decorso il quale Google li elimina.</p>
 
       <h3>Chi pu&ograve; accedere ai dati</h3>
       <p>Oltre a noi, solo i fornitori tecnici che rendono possibile il servizio:</p>
       <ul>
         <li><strong>GitHub, Inc.</strong> &mdash; pubblicazione delle pagine su GitHub Pages;</li>
         <li><strong>Microsoft</strong> &mdash; casella di posta info@memorycodex.com su Microsoft 365;</li>
+        <li><strong>Formspree, Inc.</strong> &mdash; ricezione e inoltro delle richieste inviate con il modulo &laquo;Prenota una call&raquo;;</li>
         <li><strong>Google</strong> &mdash; statistiche di visita, solo se le autorizzi dal banner;</li>
         <li><strong>Aruba S.p.A.</strong> &mdash; registrazione del dominio e gestione dei DNS.</li>
       </ul>
-      <p>Microsoft e Google trattano i dati per nostro conto, come responsabili del trattamento ai sensi dell'art. 28 GDPR, sulla base delle condizioni sottoscritte con ciascuno. GitHub &egrave; responsabile per l'hosting dei contenuti, ma sui log di sicurezza della propria infrastruttura agisce anche per finalit&agrave; proprie, come titolare autonomo, secondo la <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">sua informativa</a>. I dati non vengono diffusi n&eacute; ceduti.</p>
+      <p>Microsoft e Google trattano i dati per nostro conto, come responsabili del trattamento ai sensi dell'art. 28 GDPR, sulla base delle condizioni sottoscritte con ciascuno. GitHub &egrave; responsabile per l'hosting dei contenuti, ma sui log di sicurezza della propria infrastruttura agisce anche per finalit&agrave; proprie, come titolare autonomo, secondo la <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">sua informativa</a>. Formspree riceve i dati del modulo per nostro conto, al solo scopo di inoltrarceli, secondo le proprie condizioni di servizio e la <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener">sua informativa</a>. I dati non vengono diffusi n&eacute; ceduti.</p>
 
       <h3>Servizi di terze parti</h3>
       <p>Il sito si appoggia ad alcuni servizi di Google: <strong>Google Analytics 4</strong> per le statistiche di visita, attivo solo con il tuo consenso; <strong>Google Fonts</strong> per i caratteri tipografici; e, nella sola pagina Contatti, <strong>Google Maps</strong>, che si carica soltanto dopo un tuo click.</p>
@@ -1991,6 +2029,7 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
         <li><strong>GitHub, Inc.</strong>, che ospita il sito, ha una certificazione attiva al Data Privacy Framework e applica in aggiunta le clausole contrattuali standard previste dal proprio accordo sulla protezione dei dati.</li>
         <li><strong>Google LLC</strong>, per statistiche, caratteri tipografici e mappa, ha una certificazione attiva al Data Privacy Framework e applica in aggiunta le clausole contrattuali standard.</li>
         <li><strong>Microsoft Corporation</strong>, per la posta elettronica, ha una certificazione attiva al Data Privacy Framework, ma per i trasferimenti dall'Unione europea dichiara di basarsi sulle clausole contrattuali standard incluse nella propria documentazione contrattuale.</li>
+        <li><strong>Formspree, Inc.</strong>, per il modulo di contatto, tratta i dati su infrastruttura negli Stati Uniti. Non risulta certificata al Data Privacy Framework: nella propria informativa dichiara di trasferire i dati solo dove la legge lo consente e di adottare misure per garantirne un'adeguata protezione.</li>
       </ul>
       <p>La certificazione di ciascuno &egrave; verificabile nell'<a href="https://www.dataprivacyframework.gov/list" target="_blank" rel="noopener">elenco ufficiale del programma</a>, tenuto dal Dipartimento del commercio statunitense.</p>
       <p>Il dominio &egrave; gestito da Aruba S.p.A., societ&agrave; italiana. Non trasferiamo dati verso altri Paesi extra-UE.</p>
@@ -1999,7 +2038,7 @@ Monitora in modo intelligente le caselle email della tua azienda, individua le c
       <p>Puoi chiederci in qualsiasi momento di accedere ai tuoi dati, correggerli, cancellarli, limitarne il trattamento od opporti al loro uso, e ricevere copia di quelli che ci hai fornito (artt. 15-22 GDPR). Scrivi a <a href="mailto:info@memorycodex.com">info@memorycodex.com</a>.</p>
       <p>Puoi inoltre <strong>revocare il consenso alle statistiche</strong> quando vuoi (art. 7.3 GDPR), senza che questo tolga validit&agrave; alla raccolta gi&agrave; avvenuta: il pulsante &egrave; nella Cookie policy. Se ritieni che qualcosa non vada, puoi rivolgerti al Garante per la protezione dei dati personali.</p>
 
-      <p class="legal-updated">Ultimo aggiornamento: luglio 2026</p>
+      <p class="legal-updated">Ultimo aggiornamento: ottobre 2026</p>
     </div>
   </div>
 </div>
